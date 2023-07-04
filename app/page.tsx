@@ -1,112 +1,73 @@
+'use client'
+
 import Image from 'next/image'
+import ProjectCard from '../components/ProjectCard'
+
+const Projects = [
+  {
+    title: 'Stripe Shop',
+    image: '/stripe-shop-image.webp',
+    github: 'https://github.com/brandonrainey/stripe-shop',
+    live: 'https://stripe-shop.netlify.app/',
+    page: '/stripe-shop',
+    description:
+    (<div>Developed a responsive e-commerce site with Stripe integration for seamless transactions and secure user authentication via Google OAuth. Utilized technologies such as <span className='bg-red-600 p-0.5 rounded font-bold'>Next.js</span>,
+     <span className='bg-blue-600 p-0.5 rounded font-bold'>TypeScript</span>, Redux Toolkit, and <span></span>Tailwind CSS for modern interface design and efficient Firestore and Stripe events handling.</div>)
+      ,
+  },
+
+  {
+    title: 'Game Feedback',
+    image: '/game-feedback-image.png',
+    github: 'https://github.com/brandonrainey/game-feedback',
+    live: 'https://game-feedback.netlify.app',
+    page: '/game-feedback',
+    description: 'Created an interactive application with CRUD functionality for posts, comments, and replies, using MongoDB for efficient data handling. The app, styled with SCSS, leverages the Next.js framework for a modern, visually appealing interface.',
+  },
+  {
+    title: 'Anime Database',
+    image: '/anime-db-image.webp',
+    github: 'https://github.com/brandonrainey/anime-database',
+    live: 'https://anime-calendar.netlify.app',
+    page: '/anime-database',
+    description: 'Developed a dynamic application that fetches data from an API to display in a user-friendly grid of cards, with pagination and search functionality. It features a personalized watchlist calendar leveraging local storage. The app uses Next.js, TypeScript, and is styled with Tailwind CSS for a modern look.',
+  },
+
+  {
+    title: 'Tile Memory Game',
+    image: '/tile-game-image.webp',
+    github: 'https://github.com/brandonrainey/tile-game',
+    live: 'https://tile-memory-game.netlify.app',
+    page: '/tile-memory-game',
+    description: 'Developed an engaging memory game with various grid sizes, challenging users to memorize patterns within a time limit, enhanced by appealing animations and progress tracking. The game is built with Next.js and styled with Tailwind CSS for a modern, appealing interface.',
+  },
+
+  {
+    title: 'Twitch Follow Tracker',
+    image: '/twitch-follow-tracker-image.png',
+    github: 'https://github.com/brandonrainey/twitch-vip-tracker',
+    live: 'https://mytwitchfollows.netlify.app',
+    page: '/twitch-follow-tracker',
+    description: 'Developed a personalized application fetching data from Twitch API to display user followed streams and their latest VODs in a searchable grid. Built with Next.js, incorporated Redux Toolkit for state management, and styled with Tailwind CSS.',
+  },
+
+  {
+    title: 'Developer Application',
+    image: '/developer-application-image.png',
+    github: 'https://github.com/brandonrainey/developer-application-v2',
+    live: 'https://developer-job-application.netlify.app',
+    page: '/developer-application',
+    description: 'Created a streamlined, three-step application tailored for frontend developers, incorporating various input styles for efficient data collection. Developed using Next.js and styled with SCSS for a modern, intuitive user experience.',
+  },
+]
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-[#10121d]">
+      <div className="flex flex-row flex-wrap justify-center w-full gap-10">
+        {Projects.map((item: any, index: number) => (
+          <ProjectCard project={item} key={index} />
+        ))}
       </div>
     </main>
   )
