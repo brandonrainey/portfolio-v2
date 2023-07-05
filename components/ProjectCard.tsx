@@ -21,7 +21,7 @@ interface ProjectCardProps{
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <Card className='max-w-[500px]  bg-[#2a2833]'>
+    <Card className='max-w-[500px]  bg-[#2a2833] flex flex-col shadow-slate-600 shadow'>
       <CardMedia
         component="img"
         alt="project image"
@@ -36,7 +36,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           {project.description}
         </Typography>
       </CardContent>
-      <CardActions className='bg-[#2a2833] flex justify-around '>
+      <CardActions className='bg-[#2a2833] flex justify-around mt-auto'>
         <a href={project.live}>
             <Button size="small" className='text-white hover:bg-blue-600 text-lg'>Live</Button>
         </a>

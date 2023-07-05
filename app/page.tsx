@@ -2,6 +2,8 @@
 
 import Image from 'next/image'
 import ProjectCard from '../components/ProjectCard'
+import Header from '@/components/Header'
+import AboutMe from '@/components/AboutMe'
 
 const Projects = [
   {
@@ -11,9 +13,8 @@ const Projects = [
     live: 'https://stripe-shop.netlify.app/',
     page: '/stripe-shop',
     description:
-    (<div>Developed a responsive e-commerce site with Stripe integration for seamless transactions and secure user authentication via Google OAuth. Utilized technologies such as <span className='bg-red-600 p-0.5 rounded font-bold'>Next.js</span>,
-     <span className='bg-blue-600 p-0.5 rounded font-bold'>TypeScript</span>, Redux Toolkit, and <span></span>Tailwind CSS for modern interface design and efficient Firestore and Stripe events handling.</div>)
-      ,
+    
+      'Developed a responsive e-commerce site with Stripe integration for seamless transactions and secure user authentication via Google OAuth. Utilized technologies such as Next.js, TypeScript, Redux Toolkit, and Tailwind CSS for modern interface design and efficient Firestore and Stripe events handling.'
   },
 
   {
@@ -63,12 +64,14 @@ const Projects = [
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-[#10121d]">
+    <main className="flex min-h-screen flex-col items-center justify-between p-10 bg-[#10121d] gap-20">
+      <Header />
       <div className="flex flex-row flex-wrap justify-center w-full gap-10">
         {Projects.map((item: any, index: number) => (
           <ProjectCard project={item} key={index} />
         ))}
       </div>
+      <AboutMe />
     </main>
   )
 }
