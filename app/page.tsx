@@ -1,5 +1,5 @@
 'use client'
-
+import { useRef } from 'react'
 import Image from 'next/image'
 import ProjectCard from '../components/ProjectCard'
 import Header from '@/components/Header'
@@ -63,15 +63,18 @@ const Projects = [
 ]
 
 export default function Home() {
+
+  const AboutMeRef = useRef(null)
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-10 bg-[#10121d] gap-20">
-      <Header />
+      <Header AboutMeRef={AboutMeRef}/>
       <div className="flex flex-row flex-wrap justify-center w-full gap-10">
         {Projects.map((item: any, index: number) => (
           <ProjectCard project={item} key={index} />
         ))}
       </div>
-      <AboutMe />
+      <AboutMe AboutMeRef={AboutMeRef}/>
     </main>
   )
 }

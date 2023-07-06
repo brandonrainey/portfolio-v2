@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useRef } from 'react'
 
-export default function AboutMe() {
+interface AboutMeProps {
+  AboutMeRef: any
+}
+
+export default function AboutMe({ AboutMeRef }: AboutMeProps) {
+
+  
+
   return (
-    <div className='w-[75%] text-[#dadbde] flex-col flex gap-4'>
+    <div className='w-[75%] text-[#dadbde] flex-col flex gap-4' ref={AboutMeRef}>
         <h2 className='text-5xl text-[#9bc1e7] font-bold'>About Me</h2>
         <p className='border-l-4 pl-2 border-[#37448f]'>As a 29-year-old Frontend Developer based in Goose Creek, South Carolina, I am passionate about leveraging technology to create impactful solutions. For the past two years, I've been honing my skills in HTML, CSS, and JavaScript/TypeScript, with a focus on developing engaging websites and web applications using JavaScript and React.</p>
         <p className='border-l-4 pl-2 border-[#37448f]'>
