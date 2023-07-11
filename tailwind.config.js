@@ -14,6 +14,9 @@ module.exports = {
       },
       fontFamily: {
         'arima': ['Arima']
+      },
+      boxShadow: {
+        'icons': 'rgba(0, 0, 0, 0.1) 0px 4px 12px'
       }
     },
   },

@@ -70,7 +70,13 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-10 bg-[#10121d] gap-20">
       <Header AboutMeRef={AboutMeRef}/>
-      <Intro />
+        
+          <Intro />
+        
+        
+          
+      
+      
       <div className="flex flex-row flex-wrap justify-center w-full gap-10">
         {Projects.map((item: any, index: number) => (
           <ProjectCard project={item} key={index} />

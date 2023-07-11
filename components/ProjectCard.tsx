@@ -38,10 +38,10 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       </CardContent>
       <CardActions className='bg-[#2a2833] flex justify-around mt-auto'>
         <a href={project.live}>
-            <Button size="small" className='text-white hover:bg-blue-600 text-lg'>Live</Button>
+            <Button variant="outlined" size="small" className='text-white hover:bg-blue-600 text-lg border-2 hover:border-2'>Live</Button>
         </a>
         <a href={project.github}>
-           <Button size="small" className='text-white hover:bg-blue-600 text-lg'>Github</Button> 
+           <Button variant="outlined" size="small" className='text-white hover:bg-blue-600 text-lg border-2 hover:border-2'>Github</Button> 
         </a>
         
       </CardActions>
