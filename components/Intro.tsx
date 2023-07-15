@@ -6,7 +6,7 @@ export default function Intro() {
       <div className="flex flex-col text-white bg-[#232041] p-4 rounded">
         <div className="flex justify-around">
           <h2 className="lg:text-6xl sm:text-5xl text-4xl font-semibold mb-4 self-center drop-shadow">
-            Hello! I'm <span className="text-[#9bc1e7]">Brandon,</span>
+            Hey! I'm <span className="text-[#9bc1e7]">Brandon,</span>
           </h2>
           <img
             src="/pfp.png"
