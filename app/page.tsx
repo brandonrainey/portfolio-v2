@@ -71,21 +71,33 @@ const Projects = [
 export default function Home() {
   const AboutMeRef = useRef(null)
 
+  const ProjectsRef = useRef(null)
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between sm:p-10 p-4 bg-[#10121d] gap-20">
-      <Header AboutMeRef={AboutMeRef} />
+      <Header AboutMeRef={AboutMeRef} ProjectsRef={ProjectsRef}/>
 
       <Intro />
+      <div className="sm:w-[75%] w-full flex flex-row items-center gap-2 -mb-8">
+        <div className="w-10 h-10 bg-slate-600 rounded-sm font-bold text-2xl flex items-center justify-center text-white">企</div>
+        <h2 className="text-5xl text-[#9bc1e7] font-bold sm:text-left sm:w-[75%] w-full" ref={ProjectsRef}>
+          Projects
+        </h2>
+      </div>
 
-      <h2 className="text-5xl text-[#9bc1e7] font-bold text-left w-[75%] -mb-8">
-        Projects
-      </h2>
       <div className="flex flex-row flex-wrap justify-center w-full gap-10">
         {Projects.map((item: any, index: number) => (
           <ProjectCard project={item} key={index} />
         ))}
       </div>
-      <h2 className="text-5xl text-[#9bc1e7] font-bold text-left sm:w-[75%]  w-full -mb-8">Skills</h2>
+
+      <div className="sm:w-[75%] w-full flex flex-row items-center gap-2 -mb-8">
+        <div className="w-10 h-10 bg-slate-600 rounded-sm font-bold text-2xl flex items-center justify-center text-white">能</div>
+        <h2 className="text-5xl text-[#9bc1e7] font-bold text-left sm:w-[75%]  w-full">
+          Skills
+        </h2>
+      </div>
+
       <Skills />
       <AboutMe AboutMeRef={AboutMeRef} />
     </main>

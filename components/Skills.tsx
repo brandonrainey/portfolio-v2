@@ -3,7 +3,7 @@ import Paper from '@mui/material/Paper'
 
 export default function Skills() {
   return (
-    <div className='flex gap-4 sm:w-[75%] w-[100%] flex-wrap justify-center '>
+    <div className='flex sm:gap-4 gap-2 sm:w-[75%] w-[100%] flex-wrap justify-center '>
         <Paper className='bg-[#444059] p-2 w-28  flex flex-col items-center justify-center hover:transition hover:scale-105 ease-in-out duration-75' elevation={4}>
             <img src="/htmlicon.png" alt="html icon" className='w-16'/>
             <p className='text-white font-bold'>HTML</p>
