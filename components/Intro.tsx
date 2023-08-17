@@ -9,7 +9,7 @@ export default function Intro() {
             Hey! I&apos;m <span className="text-[#9bc1e7]">Brandon,</span>
           </h2>
           <img
-            src="/pfp.png"
+            src="/pfp.webp"
             alt="profile picture"
             className="sm:min-w-[200px] min-w-[150px] sm:h-[200px] rounded-[50%] border-2 border-[#112148]"
           />
