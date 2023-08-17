@@ -1,10 +1,4 @@
 import * as React from 'react'
-import Card from '@mui/material/Card'
-import CardActions from '@mui/material/CardActions'
-import CardContent from '@mui/material/CardContent'
-import CardMedia from '@mui/material/CardMedia'
-import Button from '@mui/material/Button'
-import Typography from '@mui/material/Typography'
 
 interface ProjectCardProps {
   project: {
@@ -19,50 +13,24 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <Card className="max-w-[500px]  bg-[#2a2833] flex flex-col shadow-slate-600 shadow">
-      <CardMedia
-        component="img"
-        alt="project image"
-        image={project.image}
-        className=""
-      />
-      <CardContent className="bg-[#2a2833] text-white">
-        <Typography
-          gutterBottom
-          variant="h4"
-          component="div"
-          className="font-bold"
-        >
-          {project.title}
-        </Typography>
-        <Typography
-          variant="body2"
-          color="text.secondary"
-          className="text-white"
-        >
-          {project.description}
-        </Typography>
-      </CardContent>
-      <CardActions className="bg-[#2a2833] flex justify-around mt-auto">
+    <div className="max-w-[500px]  bg-[#2a2833] flex flex-col shadow-slate-600 shadow ">
+      <img src={project.image} className="rounded-t" />
+      <div className="bg-[#2a2833] text-white p-4">
+        <h2 className="font-bold text-4xl pb-4">{project.title}</h2>
+        <p className="text-white">{project.description}</p>
+      </div>
+      <div className="bg-[#2a2833] flex justify-around mt-auto pb-2">
         <a href={project.live}>
-          <Button
-            variant="outlined"
-            size="small"
-            className="text-white hover:bg-blue-600 text-lg border-2 hover:border-2"
-          >
+          <button className="text-white hover:bg-[#313c89] text-lg border-2 hover:border-2 px-4 border-[#4a79ae] rounded transition-all ease-in-out duration-150">
             Live
-          </Button>
+          </button>
         </a>
         <a href={project.github}>
-          <Button
-            variant="outlined"
-            size="small"
-            className="text-white hover:bg-blue-600 text-lg border-2 hover:border-2"
-          >
+          <button className="text-white hover:bg-[#313c89] text-lg border-2 hover:border-2 px-4 border-[#4a79ae] rounded transition-all ease-in-out duration-150">
             Github
-          </Button>
+          </button>
         </a>
-      </CardActions>
-    </Card>
+      </div>
+    </div>
   )
 }
