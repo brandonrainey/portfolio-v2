@@ -49,7 +49,7 @@ export default function AboutMe({ AboutMeRef }: AboutMeProps) {
         latest tech trends such as AI, PC gaming, and watching anime. Currently,
         I am actively seeking opportunities as a Frontend Developer and would
         love to bring my skills, dedication, and enthusiasm to your team. If
-        you&apos;re looking for a passionate and ambitious developer, please don't
+        you&apos;re looking for a passionate and ambitious developer, please don&apos;t
         hesitate to reach out!
       </p>
     </div>
