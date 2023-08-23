@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 export default function Intro() {
   return (
@@ -8,11 +9,16 @@ export default function Intro() {
           <h2 className="lg:text-6xl sm:text-5xl text-4xl font-semibold mb-4 self-center drop-shadow">
             Hey! I&apos;m <span className="text-[#9bc1e7]">Brandon,</span>
           </h2>
-          <img
+          <div className='sm:min-w-[250px] min-w-[150px] sm:h-[250px]  min-h-[150px] rounded-[50%] border-4 border-[#bbbec3] shadow-2xl relative'>
+            <Image
             src="/pfp-transparent.png"
             alt="profile picture"
-            className="sm:min-w-[200px] min-w-[150px] sm:h-[200px] rounded-[50%] border-4 border-[#bbbec3] shadow-2xl"
+            style={{objectFit: "contain"}}
+            fill={true}
+            priority={true}
           />
+          </div>
+          
         </div>
 
         <p className="text-[#bbbec3] lg:text-lg sm:text-base text-sm">

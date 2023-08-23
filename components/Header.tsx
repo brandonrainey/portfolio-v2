@@ -22,13 +22,13 @@ export default function Header({ AboutMeRef, ProjectsRef }: HeaderProps) {
       <nav className="flex flex-col sm:flex-row items-center gap-2">
         <ul className="flex gap-4 items-center justify-center text-white px-4">
           <li
-            className="cursor-pointer hover:border-[1px] hover:px-[3px] px-1 rounded "
+            className="cursor-pointer hover:border-[1px] hover:px-[3px] px-1 rounded text-lg"
             onClick={() => handleProjectsClick()}
           >
             Projects
           </li>
           <li
-            className="cursor-pointer hover:border-[1px] hover:px-[3px] px-1 rounded "
+            className="cursor-pointer hover:border-[1px] hover:px-[3px] px-1 rounded text-lg"
             onClick={() => handleAboutMeClick()}
           >
             About
