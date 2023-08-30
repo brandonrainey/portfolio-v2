@@ -19,22 +19,14 @@ export default function Header({ AboutMeRef, ProjectsRef }: HeaderProps) {
       <h1 className="text-white font-extrabold text-4xl border-2 w-fit p-2 rounded shadow-white shadow self-center text-center">
         勇剣
       </h1>
-      <nav className="flex flex-col sm:flex-row items-center gap-2">
-        <ul className="flex gap-4 items-center justify-center text-white px-4">
-          <li
-            className="cursor-pointer hover:border-[1px] hover:px-[3px] px-1 rounded text-lg"
+      <nav className="flex sm:flex-row items-center gap-2 ">
+        <div className="flex sm:flex-row flex-col gap-4 items-center justify-center text-white px-4 border-r-2">
+          <p
+            className="cursor-pointer sm:hover:border-[1px] sm:hover:px-[3px] px-1 rounded text-lg"
             onClick={() => handleProjectsClick()}
           >
             Projects
-          </li>
-          <li
-            className="cursor-pointer hover:border-[1px] hover:px-[3px] px-1 rounded text-lg"
-            onClick={() => handleAboutMeClick()}
-          >
-            About
-          </li>
-        </ul>
-        <div className="flex items-center sm:gap-2 gap-4">
+          </p>
           <a href="https://github.com/brandonrainey">
             <img
               src="/githubIconWhite.png"
@@ -42,11 +34,19 @@ export default function Header({ AboutMeRef, ProjectsRef }: HeaderProps) {
               className="w-[40px] hover:shadow-icons hover:shadow-white ease-in-out duration-75 rounded-full"
             />
           </a>
+        </div>
+        <div className="flex sm:flex-row flex-col items-center sm:gap-2 gap-4 ">
+          <p
+            className="cursor-pointer sm:hover:border-[1px] sm:hover:px-[3px] px-1 rounded text-lg text-white sm:-mb-[0px] -mb-[4px]"
+            onClick={() => handleAboutMeClick()}
+          >
+            About
+          </p>
           <a href="https://www.linkedin.com/in/brandon-rainey/">
             <img
               src="/linkedinIcon.png"
               alt="linkedin icon"
-              className="w-[46px] hover:shadow-icons hover:shadow-white ease-in-out duration-75 rounded-full"
+              className="w-[44px] hover:shadow-icons hover:shadow-white ease-in-out duration-75 rounded-full -mb-[2px]"
             />
           </a>
         </div>
