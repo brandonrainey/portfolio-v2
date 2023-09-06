@@ -4,21 +4,20 @@ import Image from 'next/image'
 export default function Intro() {
   return (
     <div className="relative flex justify-around sm:w-[75%] max-w-[800px] z-50 ">
-      <div className="flex flex-col text-white bg-[#232041] p-4 rounded">
+      <div className="flex flex-col text-white bg-[#0c0923af] p-4 rounded">
         <div className="flex justify-around">
           <h2 className="lg:text-6xl sm:text-5xl text-4xl font-semibold mb-4 self-center drop-shadow">
             Hey! I&apos;m <span className="text-[#9bc1e7]">Brandon,</span>
           </h2>
-          <div className='sm:min-w-[250px] min-w-[150px] sm:h-[250px]  min-h-[150px] rounded-[50%] border-4 border-[#bbbec3] shadow-2xl relative'>
+          <div className="sm:min-w-[250px] min-w-[150px] sm:h-[250px]  min-h-[150px] rounded-[50%] border-4 border-[#bbbec3] shadow-2xl relative">
             <Image
-            src="/pfp-transparent.png"
-            alt="profile picture"
-            style={{objectFit: "contain"}}
-            fill={true}
-            priority={true}
-          />
+              src="/pfp-transparent.png"
+              alt="profile picture"
+              style={{ objectFit: 'contain' }}
+              fill={true}
+              priority={true}
+            />
           </div>
-          
         </div>
 
         <p className="text-[#bbbec3] lg:text-lg sm:text-base text-sm">
@@ -51,7 +50,7 @@ export default function Intro() {
         </p>
       </div>
 
-      <div className="absolute bg-slate-600 w-[100%] h-[100%] top-[20px] left-[-20px] z-[-1] rounded shadow-icons shadow-slate-600"></div>
+      <div className="absolute bg-[#141c2f] w-[100%] h-[100%] top-[20px] left-[-20px] z-[-1] rounded shadow-icons shadow-slate-800"></div>
     </div>
   )
 }

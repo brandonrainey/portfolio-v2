@@ -1,17 +1,17 @@
 import React from 'react'
 
 interface HeaderProps {
-  AboutMeRef: any
-  ProjectsRef: any
+  AboutMeRef: React.RefObject<HTMLDivElement>
+  ProjectsRef: React.RefObject<HTMLDivElement>
 }
 
 export default function Header({ AboutMeRef, ProjectsRef }: HeaderProps) {
   function handleAboutMeClick() {
-    AboutMeRef.current.scrollIntoView({ behavior: 'smooth' })
+    AboutMeRef.current?.scrollIntoView({ behavior: 'smooth' })
   }
 
   function handleProjectsClick() {
-    ProjectsRef.current.scrollIntoView({ behavior: 'smooth' })
+    ProjectsRef.current?.scrollIntoView({ behavior: 'smooth' })
   }
 
   return (

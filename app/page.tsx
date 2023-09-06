@@ -1,6 +1,5 @@
 'use client'
 import { useRef } from 'react'
-import Image from 'next/image'
 import ProjectCard from '../components/ProjectCard'
 import Header from '@/components/Header'
 import AboutMe from '@/components/AboutMe'
@@ -74,7 +73,7 @@ export default function Home() {
   const ProjectsRef = useRef(null)
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between sm:p-10 p-4 bg-[#10121d] gap-20">
+    <main className="flex min-h-screen flex-col items-center justify-between sm:p-10 p-4 bg-gradient-to-br from-[#10121d] via-[#1b2149] to-[#10121d] gap-20">
       <Header AboutMeRef={AboutMeRef} ProjectsRef={ProjectsRef} />
 
       <Intro />
@@ -83,7 +82,7 @@ export default function Home() {
           企
         </div>
         <h2
-          className="text-5xl text-[#9bc1e7] font-bold sm:text-left sm:w-[75%] w-full"
+          className="text-5xl text-[#9bc1e7] font-bold sm:text-left sm:w-[75%] w-full scroll-mt-3"
           ref={ProjectsRef}
         >
           Projects
