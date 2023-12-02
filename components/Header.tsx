@@ -22,7 +22,7 @@ export default function Header({ AboutMeRef, ProjectsRef }: HeaderProps) {
       <nav className="flex sm:flex-row items-center gap-2 ">
         <div className="flex sm:flex-row flex-col gap-4 items-center justify-center text-white px-4 border-r-2">
           <p
-            className="cursor-pointer sm:hover:border-[1px] sm:hover:px-[3px] px-1 rounded text-lg"
+            className="cursor-pointer sm:hover:border-[3px] sm:hover:px-[1px] px-1 rounded text-lg border-[#4a79ae]"
             onClick={() => handleProjectsClick()}
           >
             Projects
@@ -37,7 +37,7 @@ export default function Header({ AboutMeRef, ProjectsRef }: HeaderProps) {
         </div>
         <div className="flex sm:flex-row flex-col items-center sm:gap-2 gap-4 ">
           <p
-            className="cursor-pointer sm:hover:border-[1px] sm:hover:px-[3px] px-1 rounded text-lg text-white sm:-mb-[0px] -mb-[4px]"
+            className="cursor-pointer sm:hover:border-[3px] sm:hover:px-[1px] px-1 rounded text-lg text-white sm:-mb-[0px] -mb-[4px] border-[#4a79ae]"
             onClick={() => handleAboutMeClick()}
           >
             About
