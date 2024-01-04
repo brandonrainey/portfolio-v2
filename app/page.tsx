@@ -30,10 +30,10 @@ const Projects = [
     title: 'Anime Database',
     image: '/anime-db-image.webp',
     github: 'https://github.com/brandonrainey/anime-database',
-    live: 'https://anime-calendar.netlify.app',
+    live: 'https://my-anime-database.netlify.app/',
     page: '/anime-database',
     description:
-      'Developed a dynamic application that fetches data from an API to display in a user-friendly grid of cards, with pagination and search functionality. It features a personalized watchlist calendar leveraging local storage. The app uses Next.js, TypeScript, and is styled with Tailwind CSS for a modern look.',
+      'Developed a dynamic application that fetches data from an API to display in a user-friendly grid of cards, with infinite scrolling and search functionality. The app uses Next.js with Sever Actions, TypeScript, and is styled with Tailwind CSS for a modern look.',
   },
 
   {
@@ -72,6 +72,8 @@ export default function Home() {
 
   const ProjectsRef = useRef(null)
 
+
+  
   //#252330
 
   //bg-gradient-to-br from-[#10121d] via-[#1b2149] to-[#10121d]
