@@ -1,11 +1,8 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Frontend Developer Portfolio',
-  description: 'developer portfolio of Brandon Rainey',
+  description: 'Developer portfolio of Brandon Rainey',
 }
 
 export default function RootLayout({
@@ -15,7 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className="font-arimo">{children}</body>
     </html>
   )
 }

@@ -13,7 +13,8 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       fontFamily: {
-        'arima': ['Arima']
+        'arimo': ['Arimo'],
+        'unbutu': ['Ubuntu']
       },
       boxShadow: {
         'icons': 'rgba(0, 0, 0, 0.1) 0px 4px 12px'

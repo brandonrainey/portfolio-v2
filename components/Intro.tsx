@@ -3,8 +3,8 @@ import Image from 'next/image'
 
 export default function Intro() {
   return (
-    <div className="relative flex justify-around sm:w-[75%] max-w-[800px] z-50 ">
-      <div className="flex flex-col text-white bg-[#444059bb] p-4 rounded">
+    <div className="relative flex justify-around sm:w-[75%] max-w-[800px] z-50 sm:mt-0 -mt-10">
+      <div className="flex flex-col text-white bg-[#141c2f9e] p-4 rounded">
         <div className="flex justify-around">
           <h2 className="lg:text-6xl sm:text-5xl text-4xl font-semibold mb-4 self-center drop-shadow">
             Hey! I&apos;m <span className="text-[#9bc1e7]">Brandon,</span>
@@ -14,6 +14,7 @@ export default function Intro() {
               src="/pfp-transparent.png"
               alt="profile picture"
               style={{ objectFit: 'contain' }}
+              sizes="(max-width: 640px) 150px, 250px"
               fill={true}
               priority={true}
             />
@@ -50,7 +51,7 @@ export default function Intro() {
         </p>
       </div>
 
-      <div className="absolute bg-[#141c2f] w-[100%] h-[100%] top-[20px] left-[-20px] z-[-1] rounded shadow-icons shadow-slate-800"></div>
+      <div className="absolute bg-[#444059] w-[100%] h-[100%]  z-[-1] rounded shadow-icons shadow-slate-800 blur-3xl"></div>
     </div>
   )
 }

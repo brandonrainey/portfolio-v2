@@ -72,14 +72,8 @@ export default function Home() {
 
   const ProjectsRef = useRef(null)
 
-
-  
-  //#252330
-
-  //bg-gradient-to-br from-[#10121d] via-[#1b2149] to-[#10121d]
-
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between sm:p-10 p-4 bg-[#252330] gap-20">
+    <main className="flex min-h-screen flex-col items-center justify-between sm:p-10 p-4 bg-[#1f1c2c] gap-20">
       <Header AboutMeRef={AboutMeRef} ProjectsRef={ProjectsRef} />
 
       <Intro />
