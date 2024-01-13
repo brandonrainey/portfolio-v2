@@ -1,4 +1,5 @@
 'use client'
+
 import { useRef } from 'react'
 import ProjectCard from '../components/ProjectCard'
 import Header from '@/components/Header'
