@@ -1,11 +1,12 @@
 'use client'
 
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import ProjectCard from '../components/ProjectCard'
 import Header from '@/components/Header'
 import AboutMe from '@/components/AboutMe'
 import Intro from '@/components/Intro'
 import Skills from '@/components/Skills'
+import { dividerClasses } from '@mui/material'
 
 const Projects = [
   {
@@ -73,6 +74,8 @@ export default function Home() {
 
   const ProjectsRef = useRef(null)
 
+  const [showProjects, setShowProjects] = useState(false)
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between sm:p-10 p-4 bg-[#1f1c2c] gap-20">
       <Header AboutMeRef={AboutMeRef} ProjectsRef={ProjectsRef} />
@@ -90,10 +93,11 @@ export default function Home() {
         </h2>
       </div>
 
-      <div className="flex flex-row flex-wrap justify-center w-full gap-10">
+      <div className="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 justify-items-center max-w-[1600px] w-full gap-10">
         {Projects.map((item: any, index: number) => (
           <ProjectCard project={item} key={index} />
         ))}
+        
       </div>
 
       <div className="sm:w-[75%] w-full flex flex-row items-center gap-2 -mb-8">

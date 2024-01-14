@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import profilePic from '../public/pfp-transparent.webp'
 
 export default function Intro() {
   return (
@@ -11,13 +12,12 @@ export default function Intro() {
           </h2>
           <div className="sm:min-w-[250px] min-w-[150px] sm:h-[250px]  min-h-[150px] rounded-[50%] border-4 border-[#bbbec3] shadow-2xl relative z-10">
             <Image
-              src="/pfp-transparent.webp"
+              src={profilePic}
               alt="profile picture"
               style={{ objectFit: 'contain' }}
               sizes="(max-width: 640px) 150px, 250px"
               fill={true}
               priority={true}
-              className=""
             />
           </div>
         </div>
