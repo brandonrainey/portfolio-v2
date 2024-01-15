@@ -6,7 +6,7 @@ import Header from '@/components/Header'
 import AboutMe from '@/components/AboutMe'
 import Intro from '@/components/Intro'
 import Skills from '@/components/Skills'
-import { dividerClasses } from '@mui/material'
+
 
 const Projects = [
   {

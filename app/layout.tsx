@@ -1,5 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
+import Head from 'next/head'
 
 export const metadata: Metadata = {
   title: 'Frontend Developer Portfolio',
@@ -14,6 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="preload" href="/pfp-transparent.webp" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+      </Head>
       <body className="font-arimo">{children}</body>
     </html>
   )
