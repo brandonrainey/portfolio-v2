@@ -9,15 +9,11 @@ export default function Intro() {
             Hi, I&apos;m <span className="text-[#9bc1e7]">Brandon,</span>
           </h2>
           <div className="sm:min-w-[250px] min-w-[150px] sm:h-[250px]  min-h-[150px] rounded-[50%] border-4 border-[#bbbec3] shadow-2xl relative z-10">
-            <img src="/pfp-transparent.webp" alt="profile picture" className='object-contain w-auto h-auto max-h-[242px]'/>
-            {/* <Image
-              src={profilePic}
+            <img
+              src="/pfp-transparent.webp"
               alt="profile picture"
-              style={{ objectFit: 'contain' }}
-              sizes="(max-width: 640px) 150px, 250px"
-              fill={true}
-              priority={true}
-            /> */}
+              className="object-contain w-auto h-auto max-h-[242px]"
+            />
           </div>
         </div>
 
