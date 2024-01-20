@@ -49,13 +49,13 @@ const Projects = [
   },
 
   {
-    title: 'Twitch Follow Tracker',
-    image: '/twitch-follow-tracker-image.png',
-    github: 'https://github.com/brandonrainey/twitch-vip-tracker',
-    live: 'https://mytwitchfollows.netlify.app',
+    title: 'Smiley Tour',
+    image: '/smileytour-image.webp',
+    github: 'https://github.com/brandonrainey/smiley-tours',
+    live: 'https://smileytour.guide',
     page: '/twitch-follow-tracker',
     description:
-      'Developed a personalized application fetching data from Twitch API to display user followed streams and their latest VODs in a searchable grid. Built with Next.js, incorporated Redux Toolkit for state management, and styled with Tailwind CSS.',
+      'Crafted a vibrant website showcasing the tour guide services in Asakusa, Tokyo, led by a former Japanese idol. Leveraged SEO best practices to improve search engine discoverability, and used Next.js and Tailwind CSS for a modern, appealing interface.',
   },
 
   {
