@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import Head from 'next/head'
+import { Arimo, Ubuntu } from 'next/font/google'
 
 export const metadata: Metadata = {
   title: 'Frontend Developer Portfolio',
