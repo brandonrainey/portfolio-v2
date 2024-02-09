@@ -14,7 +14,7 @@ interface ProjectCardProps {
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <div className="max-w-[500px]  bg-[#2a2833] flex flex-col shadow-slate-600 shadow-md border-none rounded-md border-[#4a79ae]">
-      <img src={project.image} className="rounded-t" />
+      <img src={project.image} className="rounded-t" alt={project.title} loading='lazy'/>
       <div className="bg-[#2a2833] text-white p-4 border-t-2 border-[#4a79ae]">
         <h2 className="font-bold text-4xl pb-4">{project.title}</h2>
         <p className="text-white">{project.description}</p>

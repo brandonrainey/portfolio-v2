@@ -12,7 +12,7 @@ export default function Intro() {
             <img
               src="/pfp-transparent.webp"
               alt="profile picture"
-              className="object-contain w-auto h-auto max-h-[242px]"
+              className="object-contain w-auto max-h-[242px] aspect-square"
             />
           </div>
         </div>

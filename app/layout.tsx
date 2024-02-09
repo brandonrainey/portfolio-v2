@@ -25,7 +25,6 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         <link rel="preload" href="/pfp-transparent.webp" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
       </Head>
       <body className={`font-Arimo ${arimo.variable}`}>{children}</body>
     </html>

@@ -1,11 +1,14 @@
 'use client'
 
-import { useRef, useState } from 'react'
+import { useRef } from 'react'
 import ProjectCard from '../components/ProjectCard'
 import Header from '@/components/Header'
-import AboutMe from '@/components/AboutMe'
 import Intro from '@/components/Intro'
-import Skills from '@/components/Skills'
+import dynamic from 'next/dynamic'
+
+const Skills = dynamic(() => import('@/components/Skills'), { ssr: false })
+
+const AboutMe = dynamic(() => import('@/components/AboutMe'), { ssr: false })
 
 
 const Projects = [
@@ -73,8 +76,6 @@ export default function Home() {
   const AboutMeRef = useRef(null)
 
   const ProjectsRef = useRef(null)
-
-  const [showProjects, setShowProjects] = useState(false)
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between sm:p-10 p-4 bg-[#1f1c2c] gap-20">
