@@ -17,17 +17,15 @@ const Projects = [
     image: '/stripe-shop-image.webp',
     github: 'https://github.com/brandonrainey/stripe-shop',
     live: 'https://stripe-shop.netlify.app/',
-    page: '/stripe-shop',
     description:
       'Developed a responsive e-commerce site with Stripe integration for seamless transactions and secure user authentication via Google OAuth. Utilized technologies such as Next.js, TypeScript, Redux Toolkit, and Tailwind CSS for modern interface design and efficient Firestore and Stripe events handling.',
   },
 
   {
     title: 'Game Feedback',
-    image: '/game-feedback-image.png',
+    image: '/game-feedback-image.webp',
     github: 'https://github.com/brandonrainey/game-feedback',
     live: 'https://game-feedback.netlify.app',
-    page: '/game-feedback',
     description:
       'Created an interactive application with CRUD functionality for posts, comments, and replies, using MongoDB for efficient data handling. The app, styled with SCSS, leverages the Next.js framework for a modern, visually appealing interface.',
   },
@@ -36,7 +34,6 @@ const Projects = [
     image: '/anime-db-image.webp',
     github: 'https://github.com/brandonrainey/anime-database',
     live: 'https://my-anime-database.netlify.app/',
-    page: '/anime-database',
     description:
       'Developed a dynamic application that fetches data from an API to display in a user-friendly grid of cards, with infinite scrolling and search functionality. The app uses Next.js with Sever Actions, TypeScript, and is styled with Tailwind CSS for a modern look.',
   },
@@ -46,7 +43,6 @@ const Projects = [
     image: '/tile-game-image.webp',
     github: 'https://github.com/brandonrainey/tile-game',
     live: 'https://tile-memory-game.netlify.app',
-    page: '/tile-memory-game',
     description:
       'Developed an engaging memory game with various grid sizes, challenging users to memorize patterns within a time limit, enhanced by appealing animations and progress tracking. The game is built with Next.js and styled with Tailwind CSS for a modern, appealing interface.',
   },
@@ -56,7 +52,6 @@ const Projects = [
     image: '/smileytour-image.webp',
     github: 'https://github.com/brandonrainey/smiley-tours',
     live: 'https://smileytour.guide',
-    page: '/twitch-follow-tracker',
     description:
       'Crafted a vibrant website showcasing the tour guide services in Asakusa, Tokyo, led by a former Japanese idol. Leveraged SEO best practices to improve search engine discoverability, and used Next.js and Tailwind CSS for a modern, appealing interface.',
   },
@@ -66,7 +61,6 @@ const Projects = [
     image: '/developer-application-image.png',
     github: 'https://github.com/brandonrainey/developer-application-v2',
     live: 'https://developer-job-application.netlify.app',
-    page: '/developer-application',
     description:
       'Created a streamlined, three-step application tailored for frontend developers, incorporating various input styles for efficient data collection. Developed using Next.js and styled with SCSS for a modern, intuitive user experience.',
   },
