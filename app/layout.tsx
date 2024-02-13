@@ -1,6 +1,5 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import Head from 'next/head'
 import { Arimo } from 'next/font/google'
 
 export const metadata: Metadata = {
@@ -23,9 +22,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         <link rel="preload" href="/pfp-transparent.webp" />
-      </Head>
+      </head>
+
       <body className={`font-Arimo ${arimo.variable}`}>{children}</body>
     </html>
   )
