@@ -14,7 +14,7 @@ const AboutMe = dynamic(() => import('@/components/AboutMe'), { ssr: false })
 const Projects = [
   {
     title: 'Stripe Shop',
-    image: '/stripe-shop-image.webp',
+    image: '/stripe-shop-image-small.webp',
     github: 'https://github.com/brandonrainey/stripe-shop',
     live: 'https://stripe-shop.netlify.app/',
     description:
@@ -23,7 +23,7 @@ const Projects = [
 
   {
     title: 'Game Feedback',
-    image: '/game-feedback-image.webp',
+    image: '/game-feedback-image-small.webp',
     github: 'https://github.com/brandonrainey/game-feedback',
     live: 'https://game-feedback.netlify.app',
     description:
@@ -31,7 +31,7 @@ const Projects = [
   },
   {
     title: 'Anime Database',
-    image: '/anime-db-image.webp',
+    image: '/anime-db-image-small.webp',
     github: 'https://github.com/brandonrainey/anime-database',
     live: 'https://my-anime-database.netlify.app/',
     description:
@@ -40,7 +40,7 @@ const Projects = [
 
   {
     title: 'Tile Memory Game',
-    image: '/tile-game-image.webp',
+    image: '/tile-game-image-small.webp',
     github: 'https://github.com/brandonrainey/tile-game',
     live: 'https://tile-memory-game.netlify.app',
     description:
@@ -49,7 +49,7 @@ const Projects = [
 
   {
     title: 'Smiley Tour',
-    image: '/smileytour-image.webp',
+    image: '/smileytour-image-small.webp',
     github: 'https://github.com/brandonrainey/smiley-tours',
     live: 'https://smileytour.guide',
     description:
@@ -58,7 +58,7 @@ const Projects = [
 
   {
     title: 'Developer Application',
-    image: '/developer-application-image.png',
+    image: '/developer-application-image-small.png',
     github: 'https://github.com/brandonrainey/developer-application-v2',
     live: 'https://developer-job-application.netlify.app',
     description:
