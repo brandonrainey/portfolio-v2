@@ -18,7 +18,7 @@ export default function AboutMe({ AboutMeRef }: AboutMeProps) {
       </div>
 
       <p className="border-l-4 pl-2 border-[#37448f]">
-        As a 29-year-old Frontend Developer based in Goose Creek, South
+        As a 30-year-old Frontend Developer based in Goose Creek, South
         Carolina, I am passionate about leveraging technology to create
         impactful solutions. For the past two years, I&apos;ve been honing my
         skills in HTML, CSS, and JavaScript/TypeScript, with a focus on
