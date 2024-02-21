@@ -10,7 +10,6 @@ const Skills = dynamic(() => import('@/components/Skills'), { ssr: false })
 
 const AboutMe = dynamic(() => import('@/components/AboutMe'), { ssr: false })
 
-
 const Projects = [
   {
     title: 'Stripe Shop',
@@ -72,33 +71,32 @@ export default function Home() {
   const ProjectsRef = useRef(null)
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between sm:p-10 p-4 bg-[#1f1c2c] gap-20">
+    <div className="flex min-h-screen flex-col items-center justify-between sm:p-10 p-4 bg-[#1f1c2c] gap-20">
       <Header AboutMeRef={AboutMeRef} ProjectsRef={ProjectsRef} />
 
       <Intro />
-      <div className="sm:w-[75%] w-full flex flex-row items-center gap-2 -mb-8">
-        <div className="w-10 h-10 bg-slate-600 rounded-sm font-bold text-2xl flex items-center justify-center text-white">
+      <main className="sm:w-[75%] w-full flex flex-row items-center gap-2 -mb-8">
+        <p className="w-10 h-10 bg-slate-600 rounded-sm font-bold text-2xl flex items-center justify-center text-white">
           企
-        </div>
+        </p>
         <h2
           className="text-5xl text-[#9bc1e7] font-bold sm:text-left sm:w-[75%] w-full scroll-mt-3"
           ref={ProjectsRef}
         >
           Projects
         </h2>
-      </div>
+      </main>
 
       <div className="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 justify-items-center max-w-[1600px] w-full gap-10">
         {Projects.map((item: any, index: number) => (
           <ProjectCard project={item} key={index} />
         ))}
-        
       </div>
 
       <div className="sm:w-[75%] w-full flex flex-row items-center gap-2 -mb-8">
-        <div className="w-10 h-10 bg-slate-600 rounded-sm font-bold text-2xl flex items-center justify-center text-white">
+        <p className="w-10 h-10 bg-slate-600 rounded-sm font-bold text-2xl flex items-center justify-center text-white">
           能
-        </div>
+        </p>
         <h2 className="text-5xl text-[#9bc1e7] font-bold text-left sm:w-[75%]  w-full">
           Skills
         </h2>
@@ -106,6 +104,6 @@ export default function Home() {
 
       <Skills />
       <AboutMe AboutMeRef={AboutMeRef} />
-    </main>
+    </div>
   )
 }

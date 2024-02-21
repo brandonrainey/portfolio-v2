@@ -1,5 +1,3 @@
-
-
 interface HeaderProps {
   AboutMeRef: React.RefObject<HTMLDivElement>
   ProjectsRef: React.RefObject<HTMLDivElement>
@@ -15,9 +13,9 @@ export default function Header({ AboutMeRef, ProjectsRef }: HeaderProps) {
   }
 
   return (
-    <div className="w-full flex justify-between mb-10">
+    <header className="w-full flex justify-between mb-10">
       <h1 className="text-white font-extrabold text-4xl border-2 w-fit p-2 rounded shadow-white shadow self-center text-center">
-      開発者
+        開発者
       </h1>
       <nav className="flex sm:flex-row items-center gap-2 ">
         <div className="flex sm:flex-row flex-col gap-4 items-center justify-center text-white px-4 border-r-2">
@@ -51,6 +49,6 @@ export default function Header({ AboutMeRef, ProjectsRef }: HeaderProps) {
           </a>
         </div>
       </nav>
-    </div>
+    </header>
   )
 }

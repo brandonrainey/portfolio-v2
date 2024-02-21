@@ -1,19 +1,17 @@
-
-
 interface AboutMeProps {
   AboutMeRef: any
 }
 
 export default function AboutMe({ AboutMeRef }: AboutMeProps) {
   return (
-    <div
+    <section
       className="sm:w-[75%] text-[#dadbde] flex-col flex gap-4"
       ref={AboutMeRef}
     >
       <div className="sm:w-[75%] w-full flex flex-row items-center gap-2">
-        <div className="w-10 h-10 bg-slate-600 rounded-sm font-bold text-2xl flex items-center justify-center text-white">
+        <p className="w-10 h-10 bg-slate-600 rounded-sm font-bold text-2xl flex items-center justify-center text-white">
           約
-        </div>
+        </p>
         <h2 className="text-5xl text-[#9bc1e7] font-bold">About Me</h2>
       </div>
 
@@ -53,6 +51,6 @@ export default function AboutMe({ AboutMeRef }: AboutMeProps) {
         you&apos;re looking for a passionate and ambitious developer, please
         don&apos;t hesitate to reach out!
       </p>
-    </div>
+    </section>
   )
 }

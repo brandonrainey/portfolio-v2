@@ -1,8 +1,6 @@
-
-
 export default function Intro() {
   return (
-    <div className="relative flex justify-around sm:w-[75%] max-w-[800px] z-50 sm:mt-0 -mt-10">
+    <section className="relative flex justify-around sm:w-[75%] max-w-[800px] z-50 sm:mt-0 -mt-10">
       <div className="flex flex-col text-white bg-[#141c2fda] p-4 rounded-xl shadow-lg">
         <div className="flex justify-around">
           <h2 className="lg:text-6xl sm:text-5xl text-4xl font-semibold mb-4 self-center drop-shadow">
@@ -48,6 +46,6 @@ export default function Intro() {
       </div>
 
       <div className="absolute bg-[#444059] w-[100%] h-[100%]  z-[-1] rounded shadow-icons shadow-slate-800 blur-3xl"></div>
-    </div>
+    </section>
   )
 }
