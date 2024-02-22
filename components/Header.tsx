@@ -12,6 +12,8 @@ export default function Header({ AboutMeRef, ProjectsRef }: HeaderProps) {
     ProjectsRef.current?.scrollIntoView({ behavior: 'smooth' })
   }
 
+  
+
   return (
     <header className="w-full flex justify-between mb-10">
       <h1 className="text-white font-extrabold text-4xl border-2 w-fit p-2 rounded shadow-white shadow self-center text-center">

@@ -6,9 +6,9 @@ import Header from '@/components/Header'
 import Intro from '@/components/Intro'
 import dynamic from 'next/dynamic'
 
-const Skills = dynamic(() => import('@/components/Skills'), { ssr: false })
+const Skills = dynamic(() => import('@/components/Skills'), { ssr: true })
 
-const AboutMe = dynamic(() => import('@/components/AboutMe'), { ssr: false })
+const AboutMe = dynamic(() => import('@/components/AboutMe'), { ssr: true })
 
 const Projects = [
   {
@@ -73,6 +73,8 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-between sm:p-10 p-4 bg-[#1f1c2c] gap-20">
       <Header AboutMeRef={AboutMeRef} ProjectsRef={ProjectsRef} />
+
+      
 
       <Intro />
       <main className="sm:w-[75%] w-full flex flex-row items-center gap-2 -mb-8">
