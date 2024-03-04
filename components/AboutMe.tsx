@@ -33,7 +33,7 @@ export default function AboutMe({ AboutMeRef }: AboutMeProps) {
       <p className="border-l-4 pl-2 border-[#37448f]">
         Short-term, I aspire to transition from a non-technical role into a web
         development position. Long-term, I aim to continually expand my
-        knowledge, with the goal of becoming a senior developer. As a
+        knowledge, with the goal of becoming a senior developer and beyond. As a
         self-taught programmer, I&apos;m a testament to self-motivation and have
         a love for learning new things - currently, I&apos;m learning Japanese.
       </p>
