@@ -45,7 +45,7 @@ export default function AboutMe({ AboutMeRef }: AboutMeProps) {
       </p>
       <p className="border-l-4 pl-2 border-[#37448f]">
         Outside of professional interests, I enjoy staying up-to-date with the
-        latest tech trends such as AI, PC gaming, and watching anime. Currently,
+        latest tech trends, PC gaming, and watching anime. Currently,
         I am actively seeking opportunities as a Frontend Developer and would
         love to bring my skills, dedication, and enthusiasm to your team. If
         you&apos;re looking for a passionate and ambitious developer, please
