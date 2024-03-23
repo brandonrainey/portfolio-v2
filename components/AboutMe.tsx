@@ -35,7 +35,7 @@ export default function AboutMe({ AboutMeRef }: AboutMeProps) {
         development position. Long-term, I aim to continually expand my
         knowledge, with the goal of becoming a senior developer and beyond. As a
         self-taught programmer, I&apos;m a testament to self-motivation and have
-        a love for learning new things - currently, I&apos;m learning Japanese.
+        a love for learning new things - currently, I&apos;m also learning Japanese.
       </p>
       <p className="border-l-4 pl-2 border-[#37448f]">
         Aside from technical skills, I bring adaptability, effective teamwork,
