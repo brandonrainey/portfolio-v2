@@ -20,7 +20,7 @@ export default function Header({ AboutMeRef, ProjectsRef }: HeaderProps) {
         開発者
       </h1>
       <nav className="flex sm:flex-row items-center gap-2 ">
-        <div className="flex sm:flex-row flex-col gap-4 items-center justify-center text-white px-4 border-r-2">
+        <div className="flex sm:flex-row flex-col-reverse gap-4 items-center  text-white sm:px-4 px-2 border-r-2 mt-[2px]">
           <p
             className="cursor-pointer sm:hover:underline  px-1 rounded text-lg border-[#4a79ae]"
             onClick={() => handleProjectsClick()}
@@ -35,7 +35,7 @@ export default function Header({ AboutMeRef, ProjectsRef }: HeaderProps) {
             />
           </a>
         </div>
-        <div className="flex sm:flex-row flex-col items-center sm:gap-2 gap-4 ">
+        <div className="flex sm:flex-row flex-col-reverse  items-center sm:gap-2 gap-4 ">
           <p
             className="cursor-pointer sm:hover:underline px-1 rounded text-lg text-white sm:-mb-[0px] -mb-[4px] border-[#4a79ae]"
             onClick={() => handleAboutMeClick()}
@@ -46,7 +46,7 @@ export default function Header({ AboutMeRef, ProjectsRef }: HeaderProps) {
             <img
               src="/linkedinIcon.png"
               alt="linkedin icon"
-              className="w-[44px] hover:shadow-icons hover:shadow-white ease-in-out duration-75 rounded-full -mb-[2px]"
+              className="w-[40px] hover:shadow-icons hover:shadow-white ease-in-out duration-75 rounded-full -mb-[2px]"
             />
           </a>
         </div>

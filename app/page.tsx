@@ -29,6 +29,14 @@ const Projects = [
       'Created an interactive application with CRUD functionality for posts, comments, and replies, using MongoDB for efficient data handling. The app, styled with SCSS, leverages the Next.js framework for a modern, visually appealing interface.',
   },
   {
+    title: 'Smiley Tour',
+    image: '/smileytour-image-small.webp',
+    github: 'https://github.com/brandonrainey/smiley-tours',
+    live: 'https://smileytour.guide',
+    description:
+      'Crafted a vibrant website showcasing the tour guide services in Asakusa, Tokyo, led by a former Japanese idol. Leveraged SEO best practices to improve search engine discoverability, and used Next.js and Tailwind CSS for a modern, appealing interface.',
+  },
+  {
     title: 'Anime Database',
     image: '/anime-db-image-small.webp',
     github: 'https://github.com/brandonrainey/anime-database',
@@ -44,15 +52,6 @@ const Projects = [
     live: 'https://tile-memory-game.netlify.app',
     description:
       'Developed an engaging memory game with various grid sizes, challenging users to memorize patterns within a time limit, enhanced by appealing animations and progress tracking. The game is built with Next.js and styled with Tailwind CSS for a modern, appealing interface.',
-  },
-
-  {
-    title: 'Smiley Tour',
-    image: '/smileytour-image-small.webp',
-    github: 'https://github.com/brandonrainey/smiley-tours',
-    live: 'https://smileytour.guide',
-    description:
-      'Crafted a vibrant website showcasing the tour guide services in Asakusa, Tokyo, led by a former Japanese idol. Leveraged SEO best practices to improve search engine discoverability, and used Next.js and Tailwind CSS for a modern, appealing interface.',
   },
 
   {
@@ -73,8 +72,6 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-between sm:p-10 p-4 bg-[#1f1c2c] gap-20">
       <Header AboutMeRef={AboutMeRef} ProjectsRef={ProjectsRef} />
-
-      
 
       <Intro />
       <main className="sm:w-[75%] w-full flex flex-row items-center gap-2 -mb-8">

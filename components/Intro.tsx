@@ -4,7 +4,7 @@ export default function Intro() {
       <div className="flex flex-col text-white bg-[#141c2fda] p-4 rounded-xl shadow-lg">
         <div className="flex justify-around">
           <h2 className="lg:text-6xl sm:text-5xl text-4xl font-semibold mb-4 self-center drop-shadow">
-            Hi, I&apos;m <span className="text-[#9bc1e7]">Brandon,</span>
+            Hi, I&apos;m <span className="text-[#9bc1e7]">Brandon</span>,
           </h2>
           <div className="sm:min-w-[250px] min-w-[150px] sm:h-[250px]  min-h-[150px] rounded-[50%] border-4 border-[#bbbec3] shadow-2xl relative z-10">
             <img
@@ -32,7 +32,7 @@ export default function Intro() {
           </span>
           ,{' '}
           <span className="font-semibold sm:text-xl text-lg text-[#9bc1e7]">
-            JavaScript
+            JavaScript/TypeScript
           </span>
           , and{' '}
           <span className="font-semibold sm:text-xl text-lg text-[#9bc1e7]">

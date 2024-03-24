@@ -17,7 +17,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         className="rounded-t"
         alt={project.title}
       />
-      <div className="bg-[#2a2833] text-white p-4 border-t-2 border-[#4a79ae]">
+      <div className="bg-[#2a2833] text-white p-4">
         <h2 className="font-bold text-4xl pb-4">{project.title}</h2>
         <p className="text-white">{project.description}</p>
       </div>
