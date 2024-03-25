@@ -20,7 +20,7 @@ export default function AboutMe({ AboutMeRef }: AboutMeProps) {
         Carolina, I am passionate about leveraging technology to create
         impactful solutions. For over the past two years, I&apos;ve been honing my
         skills in HTML, CSS, and JavaScript/TypeScript, with a focus on
-        developing engaging websites and web applications using JavaScript and
+        developing websites and web apps using JavaScript and
         React.
       </p>
       <p className="border-l-4 pl-2 border-[#37448f]">
