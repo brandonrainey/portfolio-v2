@@ -12,8 +12,6 @@ export default function Header({ AboutMeRef, ProjectsRef }: HeaderProps) {
     ProjectsRef.current?.scrollIntoView({ behavior: 'smooth' })
   }
 
-  
-
   return (
     <header className="w-full flex justify-between mb-10">
       <h1 className="text-white font-extrabold text-4xl border-2 w-fit p-2 rounded shadow-white shadow self-center text-center">
@@ -28,11 +26,13 @@ export default function Header({ AboutMeRef, ProjectsRef }: HeaderProps) {
             Projects
           </p>
           <a href="https://github.com/brandonrainey">
-            <img
-              src="/githubIconWhite.png"
-              alt="github icon"
-              className="w-[40px] hover:shadow-icons hover:shadow-white ease-in-out duration-75 rounded-full"
-            />
+            <button aria-label="github link">
+              <img
+                src="/githubIconWhite.png"
+                alt="github icon"
+                className="w-[40px] hover:shadow-icons hover:shadow-white ease-in-out duration-75 rounded-full"
+              />
+            </button>
           </a>
         </div>
         <div className="flex sm:flex-row flex-col-reverse  items-center sm:gap-2 gap-4 ">
@@ -43,11 +43,13 @@ export default function Header({ AboutMeRef, ProjectsRef }: HeaderProps) {
             About
           </p>
           <a href="https://www.linkedin.com/in/brandon-rainey/">
-            <img
-              src="/linkedinIcon.png"
-              alt="linkedin icon"
-              className="w-[40px] hover:shadow-icons hover:shadow-white ease-in-out duration-75 rounded-full -mb-[2px]"
-            />
+            <button aria-label="linkedin link">
+              <img
+                src="/linkedinIcon.png"
+                alt="linkedin icon"
+                className="w-[40px] hover:shadow-icons hover:shadow-white ease-in-out duration-75 rounded-full -mb-[2px]"
+              />
+            </button>
           </a>
         </div>
       </nav>

@@ -16,9 +16,9 @@ export default function AboutMe({ AboutMeRef }: AboutMeProps) {
       </div>
 
       <p className="border-l-4 pl-2 border-[#37448f]">
-        As a 30-year-old Frontend Developer based in Goose Creek, South
-        Carolina, I am passionate about leveraging technology to create
-        impactful solutions. For over the past two years, I&apos;ve been honing my
+        Hi, I am a Frontend Developer based in Goose Creek, South
+        Carolina, and I am passionate about leveraging technology to create
+        impactful solutions. For over the past several years, I&apos;ve been honing my
         skills in HTML, CSS, and JavaScript/TypeScript, with a focus on
         developing websites and web apps using JavaScript and
         React.
@@ -36,12 +36,6 @@ export default function AboutMe({ AboutMeRef }: AboutMeProps) {
         knowledge, with the goal of becoming a senior developer and beyond. As a
         self-taught programmer, I&apos;m a testament to self-motivation and have
         a love for learning new things - currently, I&apos;m also learning Japanese.
-      </p>
-      <p className="border-l-4 pl-2 border-[#37448f]">
-        Aside from technical skills, I bring adaptability, effective teamwork,
-        and excellent customer-facing skills to the table, developed through
-        previous roles. My enthusiasm for problem-solving and continual learning
-        motivates me in this ever-evolving field.
       </p>
       <p className="border-l-4 pl-2 border-[#37448f]">
         Outside of professional interests, I enjoy staying up-to-date with the
