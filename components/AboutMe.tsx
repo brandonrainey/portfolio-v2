@@ -3,6 +3,7 @@ interface AboutMeProps {
 }
 
 export default function AboutMe({ AboutMeRef }: AboutMeProps) {
+  
   return (
     <section
       className="sm:w-[75%] text-[#dadbde] flex-col flex gap-4"

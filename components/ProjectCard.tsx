@@ -10,6 +10,7 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
+  
   return (
     <article className="max-w-[500px]  bg-[#2a2833] flex flex-col shadow-slate-600 shadow-md border-none rounded-md border-[#4a79ae]">
       <img

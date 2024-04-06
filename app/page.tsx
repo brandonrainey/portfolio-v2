@@ -65,6 +65,7 @@ const Projects = [
 ]
 
 export default function Home() {
+  
   const AboutMeRef = useRef(null)
 
   const ProjectsRef = useRef(null)
