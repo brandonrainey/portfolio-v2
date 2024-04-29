@@ -21,6 +21,15 @@ const Projects = [
   },
 
   {
+    title: 'Japan Events',
+    image: '/japan-events-image.webp',
+    github: 'https://github.com/brandonrainey/Events-App',
+    live: 'https://events-app-kappa-five.vercel.app/',
+    description:
+      'Fully featured event hosting platform allowing users to host and buy events. Integrates Stripe for payment processing, uses Clerk for authentication, and stores event and order data in MongoDB, utilizing a webhook to capture Stripe events. Created using Next.js, Typescript and styled with Tailwind CSS and Shadcn UI.',
+  },
+
+  {
     title: 'Game Feedback',
     image: '/game-feedback-image-small.webp',
     github: 'https://github.com/brandonrainey/game-feedback',
@@ -53,19 +62,9 @@ const Projects = [
     description:
       'Developed an engaging memory game with various grid sizes, challenging users to memorize patterns within a time limit, enhanced by appealing animations and progress tracking. The game is built with Next.js and styled with Tailwind CSS for a modern, appealing interface.',
   },
-
-  {
-    title: 'Developer Application',
-    image: '/developer-application-image-small.png',
-    github: 'https://github.com/brandonrainey/developer-application-v2',
-    live: 'https://developer-job-application.netlify.app',
-    description:
-      'Created a streamlined, three-step application tailored for frontend developers, incorporating various input styles for efficient data collection. Developed using Next.js and styled with SCSS for a modern, intuitive user experience.',
-  },
 ]
 
 export default function Home() {
-  
   const AboutMeRef = useRef(null)
 
   const ProjectsRef = useRef(null)
