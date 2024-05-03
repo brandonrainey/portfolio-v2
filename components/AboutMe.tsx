@@ -22,7 +22,7 @@ export default function AboutMe({ AboutMeRef }: AboutMeProps) {
         impactful solutions. For over the past several years, I&apos;ve been honing my
         skills in HTML, CSS, and JavaScript/TypeScript, with a focus on
         developing websites and web apps using JavaScript and
-        React.
+        React.  
       </p>
       <p className="border-l-4 pl-2 border-[#37448f]">
         A key project I&apos;m particularly proud of is a responsive e-commerce
