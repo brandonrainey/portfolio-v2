@@ -21,9 +21,9 @@ export default function Intro() {
           <span className="font-semibold sm:text-xl text-lg text-[#9bc1e7]">
             Frontend Developer
           </span>{' '}
-          with a knack for crafting engaging, responsive web solutions. With a
+          with a passion for crafting engaging, responsive websites and apps. With a
           diverse portfolio spanning e-commerce sites to interactive games, my
-          passion lies in leveraging the power of{' '}
+          interest lies in leveraging the power of{' '}
           <span className="font-semibold sm:text-xl text-lg text-[#9bc1e7]">
             HTML
           </span>
@@ -39,10 +39,10 @@ export default function Intro() {
           <span className="font-semibold sm:text-xl text-lg text-[#9bc1e7]">
             React
           </span>{' '}
-          to bring ideas to life. I believe in the magic of code and its ability
+          to bring ideas to life. I believe in the power of code and its ability
           to shape user experiences, drive engagement, and bring color to the
           digital world. Dive in to discover my work, skills, and the creative
-          solutions I bring to the web development table.
+          solutions I bring to the web development industry.
         </p>
       </div>
 
