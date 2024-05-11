@@ -12,15 +12,6 @@ const AboutMe = dynamic(() => import('@/components/AboutMe'), { ssr: true })
 
 const Projects = [
   {
-    title: 'Stripe Shop',
-    image: '/stripe-shop-image-small.webp',
-    github: 'https://github.com/brandonrainey/stripe-shop',
-    live: 'https://stripe-shop.netlify.app/',
-    description:
-      'Developed a responsive e-commerce site with Stripe integration for seamless transactions and secure user authentication via Google OAuth. Utilized technologies such as Next.js, TypeScript, Redux Toolkit, and Tailwind CSS for modern interface design and efficient Firestore and Stripe events handling.',
-  },
-
-  {
     title: 'Japan Events',
     image: '/japan-events-image.webp',
     github: 'https://github.com/brandonrainey/Events-App',
@@ -28,7 +19,14 @@ const Projects = [
     description:
       'Fully featured event hosting platform allowing users to host and buy events. Integrates Stripe for payment processing, uses Clerk for authentication, and stores event and order data in MongoDB, utilizing a webhook to capture Stripe events. Created using Next.js, Typescript and styled with Tailwind CSS and Shadcn UI.',
   },
-
+  {
+    title: 'Stripe Shop',
+    image: '/stripe-shop-image-small.webp',
+    github: 'https://github.com/brandonrainey/stripe-shop',
+    live: 'https://stripe-shop.netlify.app/',
+    description:
+      'Developed a responsive e-commerce site with Stripe integration for seamless transactions and secure user authentication via Google OAuth. Utilized technologies such as Next.js, TypeScript, Redux Toolkit, and Tailwind CSS for modern interface design and efficient Firestore and Stripe events handling.',
+  },
   {
     title: 'Game Feedback',
     image: '/game-feedback-image-small.webp',
