@@ -19,12 +19,12 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         alt={project.title}
       />
       <div className="bg-[#2a2833] text-white p-4">
-        <h2 className="font-bold text-4xl pb-4">{project.title}</h2>
-        <p className="text-white">{project.description}</p>
+        <h2 className="font-bold text-4xl pb-4 text-center">{project.title}</h2>
+        {project.description}
       </div>
       <div className="bg-[#2a2833] flex justify-around mt-auto pb-2">
-        <a href={project.live}>
-          <button className="text-white hover:bg-[#313c89] text-lg border-2 hover:border-2 px-4 border-[#4a79ae] rounded transition-all ease-in-out duration-150">
+        <a href={project.live} className={`${project.title === 'Open Source Contribution' && 'hidden'}`}>
+          <button className={`text-white hover:bg-[#313c89] text-lg border-2 hover:border-2 px-4 border-[#4a79ae] rounded transition-all ease-in-out duration-150 `}>
             Live
           </button>
         </a>
