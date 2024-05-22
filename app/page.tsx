@@ -53,7 +53,7 @@ const Projects = [
         <span className="font-bold text-lg text-[#9bc1e7]">Yomitan</span>, a
         Japanese popup dictionary extention for Chrome and Firefox. Improved code
         clarity/readability and expanded behavior of a function used for user
-        accessibility. Developed a new test with Vitest to ensure the function
+        accessibility. Developed a test with Vitest to ensure the function
         works as expected for current and future versions.
       </p>
     ),
