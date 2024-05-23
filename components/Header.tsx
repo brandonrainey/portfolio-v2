@@ -4,7 +4,6 @@ interface HeaderProps {
 }
 
 export default function Header({ AboutMeRef, ProjectsRef }: HeaderProps) {
-  
   function handleAboutMeClick() {
     AboutMeRef.current?.scrollIntoView({ behavior: 'smooth' })
   }

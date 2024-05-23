@@ -3,7 +3,6 @@ interface AboutMeProps {
 }
 
 export default function AboutMe({ AboutMeRef }: AboutMeProps) {
-  
   return (
     <section
       className="sm:w-[75%] text-[#dadbde] flex-col flex gap-4"
@@ -17,12 +16,11 @@ export default function AboutMe({ AboutMeRef }: AboutMeProps) {
       </div>
 
       <p className="border-l-4 pl-2 border-[#37448f]">
-        Hi, I am a Frontend Developer based in Goose Creek, South
-        Carolina, and I am passionate about leveraging technology to create
-        impactful solutions. For over the past several years, I&apos;ve been honing my
+        Hi, I am a Frontend Developer based in Goose Creek, South Carolina, and
+        I am passionate about leveraging technology to create impactful
+        solutions. For over the past several years, I&apos;ve been honing my
         skills in HTML, CSS, and JavaScript/TypeScript, with a focus on
-        developing websites and web apps using JavaScript and
-        React.  
+        developing websites and web apps using JavaScript and React.
       </p>
       <p className="border-l-4 pl-2 border-[#37448f]">
         A key project I&apos;m particularly proud of is a responsive e-commerce
@@ -36,13 +34,14 @@ export default function AboutMe({ AboutMeRef }: AboutMeProps) {
         development position. Long-term, I aim to continually expand my
         knowledge, with the goal of becoming a senior developer and beyond. As a
         self-taught programmer, I&apos;m a testament to self-motivation and have
-        a love for learning new things - currently, I&apos;m also learning Japanese.
+        a love for learning new things - currently, I&apos;m also learning
+        Japanese.
       </p>
       <p className="border-l-4 pl-2 border-[#37448f]">
         Outside of professional interests, I enjoy staying up-to-date with the
-        latest tech trends like AI, PC gaming, and watching anime. 
-        I am currently seeking opportunities as a Frontend Developer and would
-        love to bring my skills, dedication, and enthusiasm to your team. If
+        latest tech trends like AI, PC gaming, and watching anime. I am
+        currently seeking opportunities as a Frontend Developer and would love
+        to bring my skills, dedication, and enthusiasm to your team. If
         you&apos;re looking for a passionate and ambitious developer, please
         don&apos;t hesitate to reach out!
       </p>
