@@ -28,7 +28,7 @@ export default function Header({ AboutMeRef, ProjectsRef }: HeaderProps) {
           <a href="https://github.com/brandonrainey">
             <button aria-label="github link">
               <img
-                src="/githubIconWhite.png"
+                src="/icons/githubIconWhite.png"
                 alt="github icon"
                 className="w-[40px] hover:shadow-icons hover:shadow-white ease-in-out duration-75 rounded-full"
               />
@@ -45,7 +45,7 @@ export default function Header({ AboutMeRef, ProjectsRef }: HeaderProps) {
           <a href="https://www.linkedin.com/in/brandon-rainey/">
             <button aria-label="linkedin link">
               <img
-                src="/linkedinIcon.png"
+                src="/icons/linkedinIcon.png"
                 alt="linkedin icon"
                 className="w-[40px] hover:shadow-icons hover:shadow-white ease-in-out duration-75 rounded-full -mb-[2px]"
               />

@@ -45,7 +45,7 @@ export default function Intro() {
         </p>
       </div>
 
-      <div className="absolute bg-[#554b84] w-[110%] h-[100%]  z-[-1] rounded shadow-icons shadow-[#10121d] blur-3xl backdrop-blur-3xl"></div>
+      <div className="absolute bg-[#554b84] w-[110%] h-[100%]  z-[-1] rounded shadow-icons shadow-[#10121d] blur-3xl backdrop-blur-3xl "></div>
     </section>
   )
 }

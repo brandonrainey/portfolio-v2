@@ -6,3 +6,14 @@ body {
   background-color: #10121d;
   font-display: optional;
 }
+
+.projectBackgroundGradient {
+  background: rgb(21,18,41);
+background: linear-gradient(146deg, rgba(21,18,41,1) 0%, rgba(60,84,121,1) 0%, rgba(21,18,41,1) 48%);
+}
+
+.backgroundPattern {
+  background-image: url('/cubes.png');
+  background-repeat: repeat;
+  opacity: 0.2;
+}

@@ -1,21 +1,12 @@
-export default function Skills() {
-  const skills = [
-    { name: "HTML", icon: "/htmlicon.png" },
-    { name: "CSS", icon: "/cssicon.png" },
-    { name: "JavaScript", icon: "/javascriptIcon.png" },
-    { name: "TypeScript", icon: "/typescriptIcon.png" },
-    { name: "React", icon: "/reactIcon.png" },
-    { name: "Next.js", icon: "/nextjsIcon.png" },
-    { name: "SASS", icon: "/sassIcon.png" },
-    { name: "Redux", icon: "/reduxIcon.png" },
-    { name: "Tailwind", icon: "/tailwindIcon.png" },
-    { name: "Node.js", icon: "/nodejsIcon.png" },
-    { name: "Git", icon: "/gitIcon.png" },
-    { name: "Jest", icon: "/jestIcon.png" },
-    { name: "Firebase", icon: "/firebaseIcon.png" },
-    { name: "MongoDB", icon: "/mongodbIcon.webp" },
-  ];
+interface SkillProps {
+  skills: {
+    name: string
+    icon: string
+  }[]
+}
 
+export default function Skills( {skills}: SkillProps) {
+  
   return (
     <section className="flex sm:gap-4 gap-2 sm:w-[75%] w-[100%] flex-wrap justify-center ">
       {skills.map((skill) => (
