@@ -138,7 +138,7 @@ export default function Home() {
   const ContactRef = useRef(null)
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-between sm:p-10 p-4 bg-[#1f1c2c] gap-20">
+    <div className="flex min-h-screen flex-col items-center justify-between sm:p-10 p-4 bg-[#1f1c2c] gap-20 overflow-hidden">
       <div className="backgroundPattern w-full h-[520px] sm:h-[580px] absolute sm:top-[150px] top-[100px]"></div>
       <Header
         AboutMeRef={AboutMeRef}

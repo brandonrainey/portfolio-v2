@@ -47,7 +47,7 @@ export default function Contact({ ContactRef }: ContactProps) {
           onClick={() => copyToClipboard('brandonhrainey@gmail.com')}
         >
           {copySuccess && (
-            <div className="absolute -top-10 -right-2 border p-1 rounded-lg font-semibold">
+            <div className="absolute sm:-top-10 sm:-right-2 -right-[75px] border p-1 rounded-lg font-semibold bg-[#151229]">
               {copySuccess}
             </div>
           )}
