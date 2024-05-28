@@ -5,6 +5,7 @@ import ProjectCard from '../components/ProjectCard'
 import Header from '@/components/Header'
 import Intro from '@/components/Intro'
 import dynamic from 'next/dynamic'
+import Contact from '@/components/Contact'
 
 const Skills = dynamic(() => import('@/components/Skills'), { ssr: true })
 
@@ -24,7 +25,7 @@ const Projects = [
         webhook to capture Stripe events.
       </p>
     ),
-    skills: ['Next.js', 'TypeScript', 'Tailwind', 'Stripe', 'MongoDB', 'Clerk']
+    skills: ['Next.js', 'TypeScript', 'Tailwind', 'Stripe', 'MongoDB', 'Clerk'],
   },
   {
     title: 'Stripe Shop',
@@ -34,10 +35,19 @@ const Projects = [
     description: (
       <p className="text-white ">
         Developed a responsive e-commerce site with Stripe integration for
-        seamless transactions and secure user authentication via Google OAuth. Uses Redux for global state management, and stores user and product data in Firebase Firestore with.
+        seamless transactions and secure user authentication via Google OAuth.
+        Uses Redux for global state management, and stores user and product data
+        in Firebase Firestore with.
       </p>
     ),
-    skills: ['Next.js', 'TypeScript', 'Tailwind', 'Stripe', 'Firebase', 'Redux']
+    skills: [
+      'Next.js',
+      'TypeScript',
+      'Tailwind',
+      'Stripe',
+      'Firebase',
+      'Redux',
+    ],
   },
 
   {
@@ -50,10 +60,12 @@ const Projects = [
         Contributed to the open source project{' '}
         <span className="font-bold text-lg text-[#9bc1e7]">Yomitan</span>, a
         Japanese popup dictionary extention for Chrome and Firefox. Improved
-        code clarity/readability and enhanced user accessibility feature. Developed a test with Vitest to ensure maintainability for current and future versions.
+        code clarity/readability and enhanced user accessibility feature.
+        Developed a test with Vitest to ensure maintainability for current and
+        future versions.
       </p>
     ),
-    skills: ['HTML', 'CSS', 'JavaScript', 'TypeScript']
+    skills: ['HTML', 'CSS', 'JavaScript', 'TypeScript'],
   },
 
   {
@@ -67,7 +79,7 @@ const Projects = [
         comments, and replies, using MongoDB for efficient data handling.
       </p>
     ),
-    skills: ['Next.js', 'TypeScript', 'SASS', 'MongoDB']
+    skills: ['Next.js', 'TypeScript', 'SASS', 'MongoDB'],
   },
   {
     title: 'Smiley Tour',
@@ -81,7 +93,7 @@ const Projects = [
         improve search engine discoverability.
       </p>
     ),
-    skills: ['Next.js', 'TypeScript', 'Tailwind']
+    skills: ['Next.js', 'TypeScript', 'Tailwind'],
   },
   {
     title: 'Anime Database',
@@ -95,25 +107,25 @@ const Projects = [
         functionality.
       </p>
     ),
-    skills: ['Next.js', 'TypeScript', 'Tailwind']
+    skills: ['Next.js', 'TypeScript', 'Tailwind'],
   },
 ]
 
 const skills = [
-  { name: "HTML", icon: "/icons/htmlicon.png" },
-  { name: "CSS", icon: "/icons/cssicon.png" },
-  { name: "JavaScript", icon: "/icons/javascriptIcon.png" },
-  { name: "TypeScript", icon: "/icons/typescriptIcon.png" },
-  { name: "React", icon: "/icons/reactIcon.png" },
-  { name: "Next.js", icon: "/icons/nextjsIcon.png" },
-  { name: "SASS", icon: "/icons/sassIcon.png" },
-  { name: "Redux", icon: "/icons/reduxIcon.png" },
-  { name: "Tailwind", icon: "/icons/tailwindIcon.png" },
-  { name: "Node.js", icon: "/icons/nodejsIcon.png" },
-  { name: "Git", icon: "/icons/gitIcon.png" },
-  { name: "Jest", icon: "/icons/jestIcon.png" },
-  { name: "Firebase", icon: "/icons/firebaseIcon.png" },
-  { name: "MongoDB", icon: "/icons/mongodbIcon.webp" },
+  { name: 'HTML', icon: '/icons/htmlicon.png' },
+  { name: 'CSS', icon: '/icons/cssicon.png' },
+  { name: 'JavaScript', icon: '/icons/javascriptIcon.png' },
+  { name: 'TypeScript', icon: '/icons/typescriptIcon.png' },
+  { name: 'React', icon: '/icons/reactIcon.png' },
+  { name: 'Next.js', icon: '/icons/nextjsIconWhite.png' },
+  { name: 'SASS', icon: '/icons/sassIcon.png' },
+  { name: 'Redux', icon: '/icons/reduxIcon.png' },
+  { name: 'Tailwind', icon: '/icons/tailwindIcon.png' },
+  { name: 'Node.js', icon: '/icons/nodejsIcon.png' },
+  { name: 'Git', icon: '/icons/gitIcon.png' },
+  { name: 'Jest', icon: '/icons/jestIcon.png' },
+  { name: 'Firebase', icon: '/icons/firebaseIcon.png' },
+  { name: 'MongoDB', icon: '/icons/mongodbIcon.webp' },
   { name: 'Clerk', icon: '/icons/clerkIcon.webp' },
   { name: 'Stripe', icon: '/icons/stripeIcon.webp' },
 ]
@@ -123,14 +135,20 @@ export default function Home() {
 
   const ProjectsRef = useRef(null)
 
+  const ContactRef = useRef(null)
+
   return (
     <div className="flex min-h-screen flex-col items-center justify-between sm:p-10 p-4 bg-[#1f1c2c] gap-20">
-      <div className='backgroundPattern w-full h-[520px] sm:h-[580px] absolute top-[150px]'></div>
-      <Header AboutMeRef={AboutMeRef} ProjectsRef={ProjectsRef} />
+      <div className="backgroundPattern w-full h-[520px] sm:h-[580px] absolute sm:top-[150px] top-[100px]"></div>
+      <Header
+        AboutMeRef={AboutMeRef}
+        ProjectsRef={ProjectsRef}
+        ContactRef={ContactRef}
+      />
 
       <Intro />
       <main className="sm:w-[75%] w-full flex flex-row items-center gap-2 -mb-8">
-        <p className="w-10 h-10 bg-slate-600 rounded-sm font-bold text-2xl flex items-center justify-center text-white">
+        <p className="w-10 h-10 bg-[#3a376c] rounded-sm font-bold text-2xl flex items-center justify-center text-white">
           企
         </p>
         <h2
@@ -148,7 +166,7 @@ export default function Home() {
       </div>
 
       <div className="sm:w-[75%] w-full flex flex-row items-center gap-2 -mb-8">
-        <p className="w-10 h-10 bg-slate-600 rounded-sm font-bold text-2xl flex items-center justify-center text-white">
+        <p className="w-10 h-10 bg-[#3a376c] rounded-sm font-bold text-2xl flex items-center justify-center text-white">
           能
         </p>
         <h2 className="text-5xl text-[#9bc1e7] font-bold text-left sm:w-[75%]  w-full">
@@ -156,8 +174,9 @@ export default function Home() {
         </h2>
       </div>
 
-      <Skills skills={skills}/>
+      <Skills skills={skills} />
       <AboutMe AboutMeRef={AboutMeRef} />
+      <Contact ContactRef={ContactRef} />
     </div>
   )
 }
