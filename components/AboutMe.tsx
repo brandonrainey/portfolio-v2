@@ -15,21 +15,22 @@ export default function AboutMe({ AboutMeRef }: AboutMeProps) {
         <h2 className="text-5xl text-[#9bc1e7] font-bold">About Me</h2>
       </div>
 
-      <p className="border-l-4 pl-2 border-[#37448f]">
+      <p className="border rounded-lg p-2 border-[#37448f7a] z-20 relative aboutPanel shadow-sm shadow-cyan-400">
         Hi, I am a Frontend Developer based in Goose Creek, South Carolina, and
         I am passionate about leveraging technology to create impactful
         solutions. For over the past several years, I&apos;ve been honing my
         skills in HTML, CSS, and JavaScript/TypeScript, with a focus on
         developing websites and web apps using JavaScript and React.
       </p>
-      <p className="border-l-4 pl-2 border-[#37448f]">
+
+      <p className="border rounded-lg p-2 border-[#37448f7a] z-20 relative aboutPanel shadow-sm shadow-cyan-400">
         A key project I&apos;m particularly proud of is a responsive e-commerce
         site I developed, featuring Stripe integration for seamless transactions
         and secure user authentication via Google OAuth. I utilized technologies
         such as Next.js, TypeScript, Redux Toolkit, and Tailwind CSS to create a
         modern interface and efficient Firestore and Stripe events handling.
       </p>
-      <p className="border-l-4 pl-2 border-[#37448f]">
+      <p className="border rounded-lg p-2 border-[#37448f7a] z-20 relative aboutPanel shadow-sm shadow-cyan-400">
         Short-term, I aspire to transition from a non-technical role into a web
         development position. Long-term, I aim to continually expand my
         knowledge, with the goal of becoming a senior developer and beyond. As a
@@ -37,7 +38,7 @@ export default function AboutMe({ AboutMeRef }: AboutMeProps) {
         a love for learning new things - currently, I&apos;m also learning
         Japanese.
       </p>
-      <p className="border-l-4 pl-2 border-[#37448f]">
+      <p className="border rounded-lg p-2 border-[#37448f7a] z-20 relative aboutPanel shadow-sm shadow-cyan-400">
         Outside of professional interests, I enjoy staying up-to-date with the
         latest tech trends like AI, PC gaming, and watching anime. I am
         currently seeking opportunities as a Frontend Developer and would love

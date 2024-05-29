@@ -1,3 +1,5 @@
+import React, { useState } from 'react'
+
 interface HeaderProps {
   AboutMeRef: React.RefObject<HTMLDivElement>
   ProjectsRef: React.RefObject<HTMLDivElement>
@@ -16,8 +18,6 @@ export default function Header({ AboutMeRef, ProjectsRef, ContactRef }: HeaderPr
   function handleContactClick() {
     ContactRef.current?.scrollIntoView({ behavior: 'smooth' })
   }
-
-  
 
   return (
     <header className="w-full flex justify-between mb-10 items-center">

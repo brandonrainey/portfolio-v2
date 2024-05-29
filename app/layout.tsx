@@ -24,6 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="preload" href="/pfp-transparent.webp" as='image'/>
+        <link rel="preload" href="/cubes.png" as='image'/>
       </head>
       <body className={`font-Arimo ${arimo.variable}`}>{children}</body>
     </html>
