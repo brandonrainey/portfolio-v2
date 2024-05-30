@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Arimo } from 'next/font/google'
 
+
 export const metadata: Metadata = {
   title: 'Frontend Developer Portfolio',
   description:
@@ -23,10 +24,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="preload" href="/pfp-transparent.webp" as='image'/>
-        <link rel="preload" href="/cubes.png" as='image'/>
+        <link rel="preload" href="/pfp-transparent.webp" as="image" />
+        <link rel="preload" href="/cubes.png" as="image" />
       </head>
-      <body className={`font-Arimo ${arimo.variable}`}>{children}</body>
+      <body className={`font-Arimo ${arimo.variable}`}>
+        {children}
+      </body>
     </html>
   )
 }
