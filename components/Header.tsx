@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
-
 interface HeaderProps {
   AboutMeRef: React.RefObject<HTMLDivElement>
   ProjectsRef: React.RefObject<HTMLDivElement>
