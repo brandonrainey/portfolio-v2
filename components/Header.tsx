@@ -70,21 +70,21 @@ export default function Header({
 
       <nav className="flex flex-wrap sm:flex-row items-center border border-slate-500/50 rounded-xl px-2 bg-[#151229a5] w-[200px] sm:w-[300px] h-auto min-h-[50px] justify-around shadow-lg">
         <p
-          className="cursor-pointer sm:hover:underline rounded sm:text-lg text-base text-white "
+          className="cursor-pointer sm:hover:border-b sm:text-lg text-base text-white "
           onClick={() => handleProjectsClick()}
         >
           Projects
         </p>
 
         <p
-          className="cursor-pointer sm:hover:underline  rounded sm:text-lg text-base text-white "
+          className="cursor-pointer sm:hover:border-b sm:text-lg text-base text-white "
           onClick={() => handleAboutMeClick()}
         >
           About
         </p>
 
         <p
-          className="cursor-pointer sm:hover:underline rounded sm:text-lg text-base text-white"
+          className="cursor-pointer sm:hover:border-b sm:text-lg text-base text-white"
           onClick={() => handleContactClick()}
         >
           Contact
