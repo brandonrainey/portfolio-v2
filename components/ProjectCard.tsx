@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion'
+
 interface ProjectCardProps {
   project: {
     title: string
@@ -50,16 +52,24 @@ export default function ProjectCard({ project, skills }: ProjectCardProps) {
           )}
         </div>
         <div className="flex flex-col ml-auto gap-2">
-          <button
-            className={`border-2 hover:bg-[#224777b3] text-white text-lg font-semibold shadow-slate-500 shadow rounded w-20 ${
+          <motion.button
+            className={`border-2  text-white text-lg font-semibold shadow-slate-500 shadow rounded w-20 ${
               project.title === 'Open Source Contribution' && 'hidden'
             }`}
+            
+            initial={{ backgroundPosition: '0% 0%', background: 'linear-gradient(90deg, transparent 100%, #3498db 100%)' }}
+            whileHover={{ backgroundPosition: '100% 0%', background: 'linear-gradient(90deg, transparent 0%, #3498db 100%)'}}
+            transition={{ duration: 0.2, ease: 'easeIn' }}
           >
             <a href={project.live}>Live</a>
-          </button>
-          <button className="border-2 hover:bg-[#224777b3] text-white text-lg font-semibold shadow-slate-500 shadow rounded w-20">
+          </motion.button>
+          <motion.button className="border-2 hover:bg-[#224777b3] text-white text-lg font-semibold shadow-slate-500 shadow rounded w-20"
+            initial={{ backgroundPosition: '0% 0%', background: 'linear-gradient(90deg, transparent 100%, #3498db 100%)' }}
+            whileHover={{ backgroundPosition: '100% 0%', background: 'linear-gradient(90deg, transparent 0%, #3498db 100%)'}}
+            transition={{ duration: 0.2, ease: 'easeIn' }}
+          >
             <a href={project.github}>Github</a>
-          </button>
+          </motion.button>
         </div>
       </div>
     </article>

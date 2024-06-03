@@ -40,6 +40,8 @@ export default function Header({
     return textLength * 0.05
   }
 
+  const [isHovered, setIsHovered] = useState([false, false, false])
+
   return (
     <header className="w-full flex justify-between mb-10 items-center">
       <motion.div
@@ -69,26 +71,50 @@ export default function Header({
       </motion.div>
 
       <nav className="flex flex-wrap sm:flex-row items-center border border-slate-500/50 rounded-xl px-2 bg-[#151229a5] w-[200px] sm:w-[300px] h-auto min-h-[50px] justify-around shadow-lg">
-        <p
-          className="cursor-pointer sm:hover:border-b sm:text-lg text-base text-white "
+        <motion.p
+          className="cursor-pointer sm:text-lg text-base text-white relative"
           onClick={() => handleProjectsClick()}
+          onHoverStart={() => setIsHovered([true, false, false])}
+          onHoverEnd={() => setIsHovered([false, false, false])}
         >
           Projects
-        </p>
+          <motion.span
+            className="border-b absolute bottom-0 left-0 w-full"
+            initial={{ width: 0 }}
+            transition={{ duration: 0.2 }}
+            animate={{ width: isHovered[0] ? '100%' : 0 }}
+          ></motion.span>
+        </motion.p>
 
-        <p
-          className="cursor-pointer sm:hover:border-b sm:text-lg text-base text-white "
+        <motion.p
+          className="cursor-pointer sm:text-lg text-base text-white relative"
           onClick={() => handleAboutMeClick()}
+          onHoverStart={() => setIsHovered([false, true, false])}
+          onHoverEnd={() => setIsHovered([false, false, false])}
         >
           About
-        </p>
+          <motion.span
+            className="border-b absolute bottom-0 left-0 w-full"
+            initial={{ width: 0 }}
+            transition={{ duration: 0.2 }}
+            animate={{ width: isHovered[1] ? '100%' : 0 }}
+          ></motion.span>
+        </motion.p>
 
-        <p
-          className="cursor-pointer sm:hover:border-b sm:text-lg text-base text-white"
+        <motion.p
+          className="cursor-pointer sm:text-lg text-base text-white relative"
           onClick={() => handleContactClick()}
+          onHoverStart={() => setIsHovered([false, false, true])}
+          onHoverEnd={() => setIsHovered([false, false, false])}
         >
           Contact
-        </p>
+          <motion.span
+            className="border-b absolute bottom-0 left-0 w-full"
+            initial={{ width: 0 }}
+            transition={{ duration: 0.2 }}
+            animate={{ width: isHovered[2] ? '100%' : 0 }}
+          ></motion.span>
+        </motion.p>
       </nav>
     </header>
   )

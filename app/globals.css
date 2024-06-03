@@ -58,6 +58,31 @@ body {
   overflow: hidden;
 }
 
+.buttonBackground {
+  background-color: linear-gradient(90deg, transparent, #3498db);
+  background-size: 200% 100%;
+
+}
+
+.hover-animation::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #3498db;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.hover-animation:hover::before {
+  transform: translateX(0);
+  
+}
+
 
 
 

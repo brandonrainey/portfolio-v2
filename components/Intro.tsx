@@ -1,3 +1,5 @@
+
+
 export default function Intro() {
   return (
     <section className="relative flex justify-around sm:w-[75%] max-w-[800px] z-50 sm:mt-0 -mt-10">
@@ -45,7 +47,9 @@ export default function Intro() {
         </p>
       </div>
 
-      <div className="absolute bg-[#554b84] w-[110%] h-[100%] opacity-70 z-[-1] rounded shadow-icons shadow-[#10121d] blur-3xl backdrop-blur-3xl "></div>
+      <div className="absolute bg-[#554b84] w-[110%] h-[100%] opacity-70 z-[-1] rounded shadow-icons shadow-[#10121d] blur-3xl backdrop-blur-3xl "
+        
+      ></div>
     </section>
   )
 }

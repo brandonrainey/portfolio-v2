@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 interface SkillProps {
   skills: {
     name: string
