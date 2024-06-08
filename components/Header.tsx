@@ -70,9 +70,9 @@ export default function Header({
         </h1>
       </motion.div>
 
-      <nav className="flex flex-wrap sm:flex-row items-center border border-slate-500/50 rounded-xl px-2 bg-[#151229a5] w-[200px] sm:w-[300px] h-auto min-h-[50px] justify-around shadow-lg">
+      <nav className={`flex flex-wrap sm:flex-row items-center border border-slate-500/50 rounded-xl ${text === 'Developer' ? 'px-1' : 'px-2'} bg-[#151229a5] w-[230px] sm:w-[300px] h-auto min-h-[50px] justify-around shadow-lg font-semibold`}>
         <motion.p
-          className="cursor-pointer sm:text-lg text-base text-white relative"
+          className="cursor-pointer sm:text-lg text-base text-slate-300 hover:text-slate-50 relative"
           onClick={() => handleProjectsClick()}
           onHoverStart={() => setIsHovered([true, false, false])}
           onHoverEnd={() => setIsHovered([false, false, false])}
@@ -87,7 +87,7 @@ export default function Header({
         </motion.p>
 
         <motion.p
-          className="cursor-pointer sm:text-lg text-base text-white relative"
+          className="cursor-pointer sm:text-lg text-base text-slate-300 hover:text-slate-50 relative"
           onClick={() => handleAboutMeClick()}
           onHoverStart={() => setIsHovered([false, true, false])}
           onHoverEnd={() => setIsHovered([false, false, false])}
@@ -102,7 +102,7 @@ export default function Header({
         </motion.p>
 
         <motion.p
-          className="cursor-pointer sm:text-lg text-base text-white relative"
+          className="cursor-pointer sm:text-lg text-base text-slate-300 hover:text-slate-50 relative"
           onClick={() => handleContactClick()}
           onHoverStart={() => setIsHovered([false, false, true])}
           onHoverEnd={() => setIsHovered([false, false, false])}

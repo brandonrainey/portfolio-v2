@@ -27,6 +27,25 @@ const Projects = [
     ),
     skills: ['Next.js', 'TypeScript', 'Tailwind', 'Stripe', 'MongoDB', 'Clerk'],
   },
+
+  {
+    title: 'Open Source Contribution',
+    image: '/projects/yomitan-logo-wide.png',
+    github: 'https://github.com/themoeway/yomitan',
+    live: null,
+    description: (
+      <p className="text-white ">
+        Contributed to the open source project{' '}
+        <span className="font-bold text-lg text-[#9bc1e7]">Yomitan</span>, a
+        Japanese popup dictionary extention for Chrome and Firefox. Improved
+        code clarity/readability, improved typing, and enhanced user
+        accessibility feature. Developed a test with Vitest to ensure
+        maintainability for current and future versions.
+      </p>
+    ),
+    skills: ['HTML', 'CSS', 'JavaScript', 'TypeScript'],
+  },
+
   {
     title: 'Stripe Shop',
     image: '/projects/stripe-shop-image-small.webp',
@@ -48,24 +67,6 @@ const Projects = [
       'Firebase',
       'Redux',
     ],
-  },
-
-  {
-    title: 'Open Source Contribution',
-    image: '/projects/yomitan-logo-wide.png',
-    github: 'https://github.com/themoeway/yomitan',
-    live: null,
-    description: (
-      <p className="text-white ">
-        Contributed to the open source project{' '}
-        <span className="font-bold text-lg text-[#9bc1e7]">Yomitan</span>, a
-        Japanese popup dictionary extention for Chrome and Firefox. Improved
-        code clarity/readability and enhanced user accessibility feature.
-        Developed a test with Vitest to ensure maintainability for current and
-        future versions.
-      </p>
-    ),
-    skills: ['HTML', 'CSS', 'JavaScript', 'TypeScript'],
   },
 
   {
@@ -138,7 +139,7 @@ export default function Home() {
   const ContactRef = useRef(null)
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-between sm:p-10 p-4 bg-[#1f1c2c] gap-20 overflow-hidden">
+    <div className="flex min-h-screen flex-col items-center justify-between sm:p-10 p-2  bg-[#1f1c2c] gap-20 overflow-hidden">
       <div className="backgroundPattern w-full h-[520px] sm:h-[580px] absolute sm:top-[150px] top-[100px]"></div>
       <Header
         AboutMeRef={AboutMeRef}

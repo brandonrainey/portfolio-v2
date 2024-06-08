@@ -39,8 +39,9 @@ export default function ProjectCard({ project, skills }: ProjectCardProps) {
               (s) =>
                 s.name === skill && (
                   <div
-                    className={`sm:h-14 w-10 sm:w-14 h-10 p-1 flex items-center justify-center rounded-full border-2 border-white/50 skillIcon -ml-2 shadow shadow-slate-700`}
+                    className={`sm:h-14 w-10 sm:w-14 h-10 p-1 flex items-center justify-center rounded-full border-2 border-white/50 skillIcon -ml-2 shadow shadow-slate-700 z-[${index + 10}]`}
                     key={index}
+                    
                   >
                     <img
                       src={s.icon}

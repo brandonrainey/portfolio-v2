@@ -13,6 +13,7 @@ export default function Skills({ skills }: SkillProps) {
         <div
           key={skill.name}
           className="p-2 w-28 flex flex-col items-center justify-center rounded drop-shadow skillIcon group "
+          
         >
           <img
             src={skill.icon}

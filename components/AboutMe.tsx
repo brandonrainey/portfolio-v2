@@ -15,7 +15,8 @@ export default function AboutMe({ AboutMeRef }: AboutMeProps) {
         <h2 className="text-5xl text-[#9bc1e7] font-bold">About Me</h2>
       </div>
 
-      <p className="border rounded-lg p-2 border-[#37448f7a] z-20 relative aboutPanel shadow-sm shadow-cyan-400">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
+        <p className="border rounded-lg p-2 border-[#37448f7a] z-20 relative aboutPanel shadow-sm shadow-cyan-400">
         Hi, I am a Frontend Developer based in Goose Creek, South Carolina, and
         I am passionate about leveraging technology to create impactful
         solutions. For over the past several years, I&apos;ve been honing my
@@ -46,6 +47,9 @@ export default function AboutMe({ AboutMeRef }: AboutMeProps) {
         you&apos;re looking for a passionate and ambitious developer, please
         don&apos;t hesitate to reach out!
       </p>
+      </div>
+
+      
     </section>
   )
 }
