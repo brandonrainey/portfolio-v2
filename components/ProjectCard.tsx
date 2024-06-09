@@ -61,6 +61,7 @@ export default function ProjectCard({ project, skills }: ProjectCardProps) {
             initial={{ backgroundPosition: '0% 0%', background: 'linear-gradient(90deg, transparent 100%, #3498db 100%)' }}
             whileHover={{ backgroundPosition: '100% 0%', background: 'linear-gradient(90deg, transparent 0%, #3498db 100%)'}}
             transition={{ duration: 0.2, ease: 'easeIn' }}
+            aria-label='live site link'
           >
             <a href={project.live}>Live</a>
           </motion.button>
@@ -68,8 +69,9 @@ export default function ProjectCard({ project, skills }: ProjectCardProps) {
             initial={{ backgroundPosition: '0% 0%', background: 'linear-gradient(90deg, transparent 100%, #3498db 100%)' }}
             whileHover={{ backgroundPosition: '100% 0%', background: 'linear-gradient(90deg, transparent 0%, #3498db 100%)'}}
             transition={{ duration: 0.2, ease: 'easeIn' }}
+            aria-label='github project link'
           >
-            <a href={project.github}>Github</a>
+            <a href={project.github} >Github</a>
           </motion.button>
         </div>
       </div>
