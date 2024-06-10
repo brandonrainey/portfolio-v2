@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+
 interface SkillProps {
   skills: {
     name: string
@@ -9,11 +9,11 @@ interface SkillProps {
 export default function Skills({ skills }: SkillProps) {
   return (
     <section className="flex sm:gap-4 gap-2 sm:w-[75%] w-[100%] flex-wrap justify-center">
-      {skills.map((skill) => (
+      {skills.map((skill, index) => (
         <div
           key={skill.name}
-          className="p-2 w-28 flex flex-col items-center justify-center rounded drop-shadow skillIcon group "
-          
+          className="p-2 w-28 flex flex-col items-center justify-center rounded drop-shadow skillIcon group"
+          style={{backgroundSize: '170%' }}
         >
           <img
             src={skill.icon}

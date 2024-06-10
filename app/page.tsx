@@ -162,7 +162,12 @@ export default function Home() {
 
       <div className="grid 2xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 justify-items-center max-w-[1600px] w-full gap-10">
         {Projects.map((item: any, index: number) => (
-          <ProjectCard project={item} key={index} skills={skills} />
+          <ProjectCard
+            project={item}
+            key={index}
+            offset={index}
+            skills={skills}
+          />
         ))}
       </div>
 
