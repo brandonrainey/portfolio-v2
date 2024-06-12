@@ -17,7 +17,7 @@ export default function AboutMe({ AboutMeRef }: AboutMeProps) {
 
       <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
         <p className="border rounded-lg p-2 border-[#37448f7a] z-20 relative aboutPanel shadow-sm shadow-cyan-400">
-        Hi, I am a Frontend Developer based in Goose Creek, South Carolina, and
+        Hi, I am a Frontend Developer currently based in Goose Creek, SC, and
         I am passionate about leveraging technology to create impactful
         solutions. For over the past several years, I&apos;ve been honing my
         skills in HTML, CSS, and JavaScript/TypeScript, with a focus on
