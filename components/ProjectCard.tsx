@@ -26,9 +26,9 @@ export default function ProjectCard({
   return (
     <motion.article
       className="w-full h-full flex flex-col sm:p-6 p-4 rounded-xl projectBackgroundGradient shadow-lg max-w-[700px]"
-      initial={{ opacity: 0, x: -80 }}
+      initial={{ opacity: 0, x: -40 }}
       whileInView={{ opacity: 1, x: 0, offset: '-100px' }}
-      transition={{ duration: 0.5, delay: 0.2 * offset }}
+      transition={{ duration: 0.5, delay: 0.1 * offset }}
       viewport={{ once: true }}
     >
       <div className="flex items-center justify-center">
