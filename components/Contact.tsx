@@ -23,10 +23,10 @@ export default function Contact({ ContactRef }: ContactProps) {
 
   return (
     <div
-      className="w-[75%] flex sm:flex-row flex-col text-white justify-between items-center gap-2"
+      className="w-[75%] flex sm:flex-row flex-col text-white justify-center items-center gap-2 "
       ref={ContactRef}
     >
-      <h1>Created by Brandon Rainey</h1>
+      
       <div className="flex gap-2">
         <motion.button className="border border-white/50 p-2 rounded-xl shadowInner"
           whileHover={{ scale: 1.05 }}
