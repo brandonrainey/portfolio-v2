@@ -5,11 +5,12 @@ import ProjectCard from '../components/ProjectCard'
 import Header from '@/components/Header'
 import Intro from '@/components/Intro'
 import dynamic from 'next/dynamic'
-import Contact from '@/components/Contact'
 
 const Skills = dynamic(() => import('@/components/Skills'), { ssr: true })
 
 const AboutMe = dynamic(() => import('@/components/AboutMe'), { ssr: true })
+
+const Contact = dynamic(() => import('@/components/Contact'), { ssr: true })
 
 const Projects = [
   {
