@@ -1,5 +1,5 @@
 interface AboutMeProps {
-  AboutMeRef: any
+  AboutMeRef: React.RefObject<HTMLDivElement>
 }
 
 export default function AboutMe({ AboutMeRef }: AboutMeProps) {
