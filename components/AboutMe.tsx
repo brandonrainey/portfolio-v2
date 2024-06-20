@@ -32,7 +32,7 @@ export default function AboutMe({ AboutMeRef }: AboutMeProps) {
           modern interface and efficient Firestore and Stripe events handling.
         </p>
         <p className="border rounded-lg p-2 border-[#37448f7a] z-20 relative aboutPanel shadow-sm shadow-cyan-400">
-          Short-term, I aspire to transition from a non-technical role into a
+          Currently I aspire to transition from a non-technical role into a
           web development position. Long-term, I aim to continually expand my
           knowledge, with the goal of becoming a senior developer and beyond. As
           a self-taught programmer, I&apos;m a testament to self-motivation and
@@ -40,8 +40,7 @@ export default function AboutMe({ AboutMeRef }: AboutMeProps) {
           learning Japanese.
         </p>
         <p className="border rounded-lg p-2 border-[#37448f7a] z-20 relative aboutPanel shadow-sm shadow-cyan-400">
-          Outside of professional interests, I enjoy staying up-to-date with the
-          latest tech trends like AI, PC gaming, and watching anime. I&apos;m
+           I&apos;m
           currently seeking opportunities as a Frontend Developer and would love
           to bring my skills, dedication, and enthusiasm to your team. If
           you&apos;re looking for a passionate and ambitious developer, please
