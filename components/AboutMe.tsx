@@ -32,8 +32,7 @@ export default function AboutMe({ AboutMeRef }: AboutMeProps) {
           modern interface and efficient Firestore and Stripe events handling.
         </p>
         <p className="border rounded-lg p-2 border-[#37448f7a] z-20 relative aboutPanel shadow-sm shadow-cyan-400">
-          Currently I aspire to transition from a non-technical role into a
-          web development position. Long-term, I aim to continually expand my
+          Long-term, I aim to continually expand my
           knowledge, with the goal of becoming a senior developer and beyond. As
           a self-taught programmer, I&apos;m a testament to self-motivation and
           have a love for learning new things - currently, I&apos;m also
