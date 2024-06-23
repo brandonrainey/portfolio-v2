@@ -20,7 +20,7 @@ export default function AboutMe({ AboutMeRef }: AboutMeProps) {
           Hi, I&apos;m a Frontend Developer currently based in Goose Creek, SC,
           and I&apos;m passionate about leveraging technology to create
           impactful solutions. For over the past several years, I&apos;ve been
-          honing my skills in HTML, CSS, and JavaScript/TypeScript, with a focus
+          honing my skills in technologies like HTML, CSS, and JavaScript/TypeScript, with a focus
           on developing websites and web apps using JavaScript and React.
         </p>
 
