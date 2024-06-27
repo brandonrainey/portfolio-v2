@@ -1,4 +1,3 @@
-
 interface SkillProps {
   skills: {
     name: string
@@ -12,8 +11,8 @@ export default function Skills({ skills }: SkillProps) {
       {skills.map((skill, index) => (
         <div
           key={skill.name}
-          className="p-2 w-28 flex flex-col items-center justify-center rounded drop-shadow skillIcon group"
-          style={{backgroundSize: '170%' }}
+          className="p-2 w-28 flex flex-col items-center justify-center rounded-xl drop-shadow skillIcon group "
+          style={{ backgroundSize: '170%' }}
         >
           <img
             src={skill.icon}
