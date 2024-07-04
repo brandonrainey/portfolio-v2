@@ -25,11 +25,11 @@ export default function AboutMe({ AboutMeRef }: AboutMeProps) {
         </p>
 
         <p className="border rounded-lg p-2 border-[#37448f7a] z-20 relative aboutPanel shadow-sm shadow-cyan-400">
-          A key project of mine is a responsive e-commerce site I developed,
-          featuring Stripe integration for seamless transactions and secure user
-          authentication via Google OAuth. I utilized technologies such as
-          Next.js, TypeScript, Redux Toolkit, and Tailwind CSS to create a
-          modern interface and efficient Firestore and Stripe events handling.
+          A key project of mine is an events platform site I developed,
+          featuring Stripe integration for transactions, user
+          authentication via Clerk, and MongoDB as a database. I utilized technologies such as
+          Next.js, TypeScript, and Tailwind CSS to create a
+          modern interface and user experience.
         </p>
         <p className="border rounded-lg p-2 border-[#37448f7a] z-20 relative aboutPanel shadow-sm shadow-cyan-400">
           Long-term, I aim to continually expand my
