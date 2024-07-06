@@ -21,7 +21,7 @@ export default function AboutMe({ AboutMeRef }: AboutMeProps) {
           and I&apos;m passionate about leveraging technology to create
           impactful solutions. For over the past several years, I&apos;ve been
           honing my skills in technologies like HTML, CSS, and JavaScript/TypeScript, with a focus
-          on developing websites and web apps using JavaScript and React.
+          on developing websites using JavaScript and React.
         </p>
 
         <p className="border rounded-lg p-2 border-[#37448f7a] z-20 relative aboutPanel shadow-sm shadow-cyan-400">
