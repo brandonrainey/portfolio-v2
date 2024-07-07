@@ -22,7 +22,7 @@ export default function Intro() {
           <span className="font-semibold sm:text-xl text-lg text-[#9bc1e7]">
             Frontend Developer
           </span>{' '}
-          with a passion for crafting engaging, responsive websites and apps.
+          with a passion for creating engaging, responsive websites and apps.
           With a diverse portfolio spanning e-commerce sites to interactive
           games, my interest lies in leveraging the power of{' '}
           <span className="font-semibold sm:text-xl text-lg text-[#9bc1e7]">
