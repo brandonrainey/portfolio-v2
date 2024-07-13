@@ -26,10 +26,9 @@ export default function Contact({ ContactRef }: ContactProps) {
       className="w-[75%] flex sm:flex-row flex-col text-white justify-center items-center gap-2 "
       ref={ContactRef}
     >
-      
       <div className="flex gap-2">
-        <motion.button className="border border-white/50 p-2 rounded-xl shadowInner"
-          whileHover={{ scale: 1.05 }}
+        <motion.button
+          className="border border-white/50 p-2 rounded-xl shadowInner"
           whileTap={{ scale: 0.95 }}
         >
           <a href="https://github.com/brandonrainey">
@@ -40,8 +39,8 @@ export default function Contact({ ContactRef }: ContactProps) {
             />
           </a>
         </motion.button>
-        <motion.button className="border border-white/50 p-2 rounded-xl shadowInner"
-          whileHover={{ scale: 1.05 }}
+        <motion.button
+          className="border border-white/50 p-2 rounded-xl shadowInner"
           whileTap={{ scale: 0.95 }}
         >
           <a href="https://linkedin.com/in/brandon-rainey">
@@ -52,8 +51,8 @@ export default function Contact({ ContactRef }: ContactProps) {
         <motion.button
           className="border border-white/50 p-2 rounded-xl relative shadowInner"
           onClick={() => copyToClipboard('brandonhrainey@gmail.com')}
-          whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
+          transition={{ duration: 0.1, ease: 'easeInOut' }}
         >
           {copySuccess && (
             <div className="absolute sm:-top-10 sm:-right-2 -right-[75px] border p-1 rounded-lg font-semibold bg-[#151229]">
