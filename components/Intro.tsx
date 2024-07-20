@@ -3,7 +3,7 @@
 export default function Intro() {
   return (
     <section className="relative flex justify-around sm:w-[75%] max-w-[800px] z-50 sm:mt-0 -mt-10 rounded-xl">
-      <div className="flex flex-col text-white bg-[#151229] p-4 rounded-xl shadow-lg ">
+      <div className="flex flex-col text-white bg-[#15122992] p-4 rounded-xl shadow-lg border border-white/30">
         <div className="flex justify-around">
           <h2 className="lg:text-6xl sm:text-5xl text-4xl font-semibold mb-4 self-center drop-shadow">
             Hi, I&apos;m <span className="text-[#9bc1e7]">Brandon</span>,
