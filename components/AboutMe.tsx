@@ -21,7 +21,7 @@ export default function AboutMe({ AboutMeRef }: AboutMeProps) {
           and I&apos;m passionate about leveraging technology to create
           impactful solutions. For over the past several years, I&apos;ve been
           honing my skills in technologies like HTML, CSS, and JavaScript/TypeScript, with a focus
-          on developing websites using JavaScript and React.
+          on developing websites using JavaScript/React.
         </p>
 
         <p className="border rounded-lg p-2 border-[#37448f7a] z-20 relative aboutPanel shadow-sm shadow-cyan-400">
@@ -33,7 +33,7 @@ export default function AboutMe({ AboutMeRef }: AboutMeProps) {
         </p>
         <p className="border rounded-lg p-2 border-[#37448f7a] z-20 relative aboutPanel shadow-sm shadow-cyan-400">
           Long-term, I aim to continually expand my
-          knowledge, with the goal of becoming a senior developer and beyond. As
+          knowledge, with the goal of becoming a senior-level developer and beyond. As
           a self-taught programmer, I&apos;m a testament to self-motivation and
           have a love for learning new things - currently, I&apos;m also
           learning Japanese.
