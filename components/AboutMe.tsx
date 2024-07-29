@@ -17,9 +17,9 @@ export default function AboutMe({ AboutMeRef }: AboutMeProps) {
 
       <div className="grid md:grid-cols-2 grid-cols-1 gap-4 sm:gap-y-12">
         <p className="border rounded-lg p-2 border-[#37448f7a] z-20 relative aboutPanel shadow-sm shadow-cyan-400">
-          Hi, I'm a Frontend Developer based in Goose Creek, SC, passionate
+          Hi, I&apos;m a Frontend Developer based in Goose Creek, SC, passionate
           about using technology to create impactful solutions. Over the past
-          few years, I've been honing my skills in HTML, CSS, and
+          few years, I&apos;ve been honing my skills in HTML, CSS, and
           JavaScript/TypeScript, with a focus on building websites using React.
         </p>
 
@@ -32,13 +32,13 @@ export default function AboutMe({ AboutMeRef }: AboutMeProps) {
 
         <p className="border rounded-lg p-2 border-[#37448f7a] z-20 relative aboutPanel shadow-sm shadow-cyan-400">
           My long-term goal is to continually expand my knowledge and eventually
-          become a senior-level developer. As a self-taught programmer, I'm
+          become a senior-level developer. As a self-taught programmer, I&apos;m
           driven by self-motivation and a love for learning new things.
-          Currently, I'm also learning Japanese.
+          Currently, I&apos;m also learning Japanese.
         </p>
 
         <p className="border rounded-lg p-2 border-[#37448f7a] z-20 relative aboutPanel shadow-sm shadow-cyan-400">
-          I'm seeking opportunities as a Frontend Developer and would love to
+          I&apos;m seeking opportunities as a Frontend Developer and would love to
           bring my skills, dedication, and enthusiasm to your team. If you're
           looking for a passionate and ambitious developer, please feel free to
           reach out!
