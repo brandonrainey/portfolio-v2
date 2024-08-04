@@ -130,6 +130,7 @@ const skills = [
   { name: 'MongoDB', icon: '/icons/mongodbIcon.webp' },
   { name: 'Clerk', icon: '/icons/clerkIcon.webp' },
   { name: 'Stripe', icon: '/icons/stripeIcon.webp' },
+  { name: 'Liquid', icon: '/icons/liquidIcon-white.webp' },
 ]
 
 export default function Home() {
