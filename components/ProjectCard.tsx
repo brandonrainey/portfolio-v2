@@ -58,6 +58,7 @@ export default function ProjectCard({
                   >
                     <img
                       src={s.icon}
+                      alt={`${s.name} icon image`}
                       className={`  object-contain object-center w-full h-full rounded-full `}
                     />
                   </div>
@@ -83,7 +84,8 @@ export default function ProjectCard({
             transition={{ duration: 0.2, ease: 'easeIn' }}
             aria-label="live site link"
           >
-            <a href={project.live}>Live</a>
+            {project.live && <a href={project.live}>Live</a>}
+            
           </motion.button>
           <motion.button
             className="border-2 hover:bg-[#224777b3] text-white text-lg font-semibold shadow-slate-500 shadow rounded w-20"
