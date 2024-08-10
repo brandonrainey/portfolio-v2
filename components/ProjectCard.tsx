@@ -22,7 +22,6 @@ export default function ProjectCard({
   skills,
   offset,
 }: ProjectCardProps) {
-
   return (
     <motion.article
       className="w-full h-full flex flex-col sm:p-6 p-4 rounded-xl projectBackgroundGradient relative pb-[30px] shadow-lg max-w-[700px]"
@@ -85,7 +84,6 @@ export default function ProjectCard({
             aria-label="live site link"
           >
             {project.live && <a href={project.live}>Live</a>}
-            
           </motion.button>
           <motion.button
             className="border-2 hover:bg-[#224777b3] text-white text-lg font-semibold shadow-slate-500 shadow rounded w-20"

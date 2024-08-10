@@ -38,10 +38,10 @@ export default function AboutMe({ AboutMeRef }: AboutMeProps) {
         </p>
 
         <p className="border rounded-lg p-2 border-[#37448f7a] z-20 relative aboutPanel shadow-sm shadow-cyan-400">
-          I&apos;m seeking opportunities as a Frontend Developer and would love to
-          bring my skills, dedication, and enthusiasm to your team. If you&apos;re
-          looking for a passionate and ambitious developer, please feel free to
-          reach out!
+          I&apos;m seeking opportunities as a Frontend Developer and would love
+          to bring my skills, dedication, and enthusiasm to your team. If
+          you&apos;re looking for a passionate and ambitious developer, please
+          feel free to reach out!
         </p>
       </div>
     </section>

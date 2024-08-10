@@ -1,5 +1,3 @@
-
-
 export default function Intro() {
   return (
     <section className="relative flex justify-around sm:w-[75%] max-w-[800px] z-50 sm:mt-0 -mt-10 rounded-xl">

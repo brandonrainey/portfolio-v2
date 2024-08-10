@@ -70,7 +70,11 @@ export default function Header({
         </h1>
       </motion.div>
 
-      <nav className={`flex flex-wrap sm:flex-row items-center border border-slate-500/50 rounded-xl ${text === 'Developer' ? 'px-1' : 'px-2'} bg-[#151229a5] w-[230px] sm:w-[300px] h-auto min-h-[50px] justify-around shadow-lg font-semibold`}>
+      <nav
+        className={`flex flex-wrap sm:flex-row items-center border border-slate-500/50 rounded-xl ${
+          text === 'Developer' ? 'px-1' : 'px-2'
+        } bg-[#151229a5] w-[230px] sm:w-[300px] h-auto min-h-[50px] justify-around shadow-lg font-semibold`}
+      >
         <motion.p
           className="cursor-pointer sm:text-lg text-base text-slate-300 hover:text-slate-50 relative"
           onClick={() => handleProjectsClick()}
