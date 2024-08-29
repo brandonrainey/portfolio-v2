@@ -131,6 +131,7 @@ const skills = [
   { name: 'Clerk', icon: '/icons/clerkIcon.webp' },
   { name: 'Stripe', icon: '/icons/stripeIcon.webp' },
   { name: 'Liquid', icon: '/icons/liquidIcon-white.webp' },
+  { name: 'React Native', icon: '/icons/reactNativeIcon.png' },
 ]
 
 export default function Home() {
