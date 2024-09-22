@@ -19,7 +19,7 @@ export default function Skills({ skills }: SkillProps) {
             alt={`${skill.name} icon`}
             className={`w-16 ${skill.name === 'React' && 'w-20'}`}
           />
-          <p className="text-white font-bold">{skill.name}</p>
+          <p className="text-white font-bold text-center">{skill.name}</p>
         </div>
       ))}
     </section>
